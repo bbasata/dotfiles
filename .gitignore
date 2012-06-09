@@ -44,3 +44,8 @@
 /software
 /tmp
 /tools
+/.zsh_history
+/.rbenv
+/.subversion_IDEA
+/.m2
+/.zcompdump
