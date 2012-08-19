@@ -35,7 +35,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 source /Users/baraa/perl5/perlbrew/etc/bashrc
-export PATH=~/bin:$PATH
+export PATH=~/bin:/Applications/Postgres.app/Contents/MacOS/bin:$PATH
 source ~/.bash_aliases
 export NODE_PATH=/Users/baraa/software/node-v0.4.9:/Users/baraa/software/node-v0.4.9/lib/node_modules
 export PATH=$PATH:/Users/baraa/software/node-v0.4.9/bin
