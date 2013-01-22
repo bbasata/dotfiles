@@ -1,7 +1,6 @@
 *
 !.gitignore
 !.powconfig
-!.vim
 !.vimrc
 !.zsh-update
 !.zshenv
