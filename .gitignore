@@ -1,6 +1,7 @@
 *
 !.gitignore
 !.powconfig
+!.tmux.conf
 !.vimrc
 !.zsh-update
 !.zshenv
