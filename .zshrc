@@ -34,7 +34,6 @@ plugins=(bundler git osx rake)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-source /Users/baraa/perl5/perlbrew/etc/bashrc
-source ~/.bash_aliases
-### Added by the Heroku Toolbelt
+
+# Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
