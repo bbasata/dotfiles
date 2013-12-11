@@ -1,0 +1,2 @@
+set mouse=a
+let g:ctrlp_cmd = 'CtrlPMRU'
