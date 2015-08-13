@@ -1,8 +1,11 @@
 set mouse=a
 
-# Via http://superuser.com/a/550482
+" Via http://superuser.com/a/550482
 if &term =~ '^screen'
   set ttymouse=xterm2
 endif
 
 let g:ctrlp_cmd = 'CtrlPMRU'
+
+" Advance through quickfix lists
+map <Leader><Leader> :w\|cnext<CR>
