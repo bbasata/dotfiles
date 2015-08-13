@@ -9,3 +9,19 @@ let g:ctrlp_cmd = 'CtrlPMRU'
 
 " Advance through quickfix lists
 map <Leader><Leader> :w\|cnext<CR>
+
+let g:vim_json_syntax_conceal = 0
+let g:vroom_cucumber_options='-r features'
+
+map <Leader><space> :nohlsearch<CR>
+map <Leader>Ga :Git add -p %<CR>
+map <Leader>Gdi :Git! diff<CR>
+map <Leader>Gdc :Git! diff --cached<CR>
+map <Leader>Gre :Git reset -p %<CR>
+map <Leader>Gco :Git checkout -p %<CR>
+
+map <Leader>c :w !pbcopy<CR>
+map <Leader>v :r !pbpaste<CR>
+
+set relativenumber
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
