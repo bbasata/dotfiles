@@ -9,7 +9,8 @@ for file in "$PWD"/*; do
   name="$(basename "$file" .md)"
   [[ $name = bin ]] && dotname="$name" || dotname=".${name}"
 
-  [[ "install janus-bootstrap readme" =~ $name ]] && continue
+  [[ "install" == $name ]] && continue
+  [[ "janus-bootstrap" == $name ]] && continue
   [ -e "${HOME}/${dotname}" ] && continue
   git --git-dir "${file}/.git" rev-parse --git-dir &>/dev/null && continue
 
