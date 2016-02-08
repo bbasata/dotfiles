@@ -9,7 +9,7 @@ for file in "$PWD"/*; do
   name="$(basename "$file" .md)"
   [[ $name = bin ]] && dotname="$name" || dotname=".${name}"
 
-  [[ "install readme" =~ $name ]] && continue
+  [[ "install janus-bootstrap readme" =~ $name ]] && continue
   [ -e "${HOME}/${dotname}" ] && continue
   git --git-dir "${file}/.git" rev-parse --git-dir &>/dev/null && continue
 
@@ -33,9 +33,7 @@ done < .external
 brew bundle --global
 
 if ! [ -e ~/.vim ]; then
-  git clone https://github.com/bbasata/vimfiles ~/.vim
-  cd ~/.vim
-  PATH=/usr/local/bin:"$PATH" rake
+  ./janus-bootstrap
 fi
 
 if ! [ -e ~/.rbenv ]; then

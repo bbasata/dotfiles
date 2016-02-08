@@ -8,7 +8,7 @@ brew "hub"
 brew "imagemagick"
 brew "jq"
 brew "macvim", args: ["--override-system-vim"]
-brew "phantomjs198"
+# brew "phantomjs198"
 brew "rbenv"
 brew "ruby-build"
 brew "terraform"
