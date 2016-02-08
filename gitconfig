@@ -1,7 +1,10 @@
 [user]
   email = bbasata@gmail.com
   name = Baraa Basata
-
+[credential]
+	helper = osxkeychain
+[github]
+	user = bbasata
 [alias]
   co = checkout
   ci = commit
