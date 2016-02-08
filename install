@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+# Adapted from: https://github.com/mislav/dotfiles/blob/64c1b395/install
+
+set -e
+
+cd "${0%/*}"
+
+for file in "$PWD"/*; do
+  name="$(basename "$file" .md)"
+  [[ $name = bin ]] && dotname="$name" || dotname=".${name}"
+
+  [[ "install readme" =~ $name ]] && continue
+  [ -e "${HOME}/${dotname}" ] && continue
+  git --git-dir "${file}/.git" rev-parse --git-dir &>/dev/null && continue
+
+  ln -sfnv ${file#$HOME/} "${HOME}/${dotname}"
+done
+
+git submodule update --init
+
+while read file; do
+  bin="bin/${file##*/}"
+  fullbin="${PWD}/${bin}"
+
+  if ! [[ -e $file ]]; then
+    echo "not found: ${file}" >&2
+  elif ! [[ -e $fullbin ]]; then
+    ln -sfnv "../${file}" "$fullbin"
+    echo "$bin" >> .git/info/exclude
+  fi
+done < .external
+
+brew bundle --global
+
+if ! [ -e ~/.vim ]; then
+  git clone https://github.com/bbasata/vimfiles ~/.vim
+  cd ~/.vim
+  PATH=/usr/local/bin:"$PATH" rake
+fi
+
+if ! [ -e ~/.rbenv ]; then
+  git clone https://github.com/rbenv/rbenv ~/.rbenv
+  mkdir -p ~/.rbenv/{cache,plugins}
+
+  ~/.rbenv/src/configure
+  make -C ~/.rbenv/src
+
+  if ! [ -e ~/p/ruby-build ]; then
+    mkdir -p ~/p
+    git clone https://github.com/rbenv/ruby-build ~/p/ruby-build
+  fi
+
+  ln -s ~/p/ruby-build ~/.rbenv/plugins/ruby-build
+  RUBY_CONFIGURE_OPTS=--disable-install-docs ~/.rbenv/bin/rbenv install 2.2.3
+  ~/.rbenv/bin/rbenv global 2.2.3
+fi
+
+~/.osx

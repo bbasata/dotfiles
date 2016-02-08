@@ -31,9 +31,8 @@
   up = "!git remote update -p; git merge --ff-only @{u}"
 
 [color]
-	ui = true
+  ui = true
 
-[init]
-	templatedir = ~/.git_template
 [push]
-	default = simple
+  default = simple
+
