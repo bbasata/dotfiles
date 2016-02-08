@@ -1,41 +1,43 @@
 [user]
-  email = bbasata@gmail.com
-  name = Baraa Basata
+email = bbasata@gmail.com
+name = Baraa Basata
+
 [credential]
-	helper = osxkeychain
+helper = osxkeychain
+
 [github]
-	user = bbasata
+user = bbasata
+
 [alias]
-  co = checkout
-  ci = commit
-  st = status
-  di = diff
-  dc = diff --cached
-  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-  type = cat-file -t
-  dump = cat-file -p
+co = checkout
+ci = commit
+st = status
+di = diff
+dc = diff --cached
+hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+type = cat-file -t
+dump = cat-file -p
 
-  # Fancy logging.
-  #   h = head
-  #   hp = head with patch
-  #   r = recent commits, only current branch
-  #   ra = recent commits, all reachable refs
-  #   l = all commits, only current branch
-  #   la = all commits, all reachable refs
-  head = !git l -1
-  h = !git head
-  hp = "!. ~/.githelpers && show_git_head"
-  r = !git l -30
-  ra = !git r --all
-  l = "!. ~/.githelpers && pretty_git_log"
-  la = !git l --all
+# Fancy logging.
+#   h = head
+#   hp = head with patch
+#   r = recent commits, only current branch
+#   ra = recent commits, all reachable refs
+#   l = all commits, only current branch
+#   la = all commits, all reachable refs
+head = !git l -1
+h = !git head
+hp = "!. ~/.githelpers && show_git_head"
+r = !git l -30
+ra = !git r --all
+l = "!. ~/.githelpers && pretty_git_log"
+la = !git l --all
 
-  # courtesy of @dmosher - https://twitter.com/dmosher/status/661930591210840064
-  up = "!git remote update -p; git merge --ff-only @{u}"
+up = sync
 
 [color]
-  ui = true
+ui = true
 
 [push]
-  default = simple
+default = simple
 
