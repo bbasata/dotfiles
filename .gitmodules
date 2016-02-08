@@ -16,3 +16,6 @@
 [submodule "janus/vim-textobj-user"]
 	path = janus/vim-textobj-user
 	url = git@github.com:kana/vim-textobj-user.git
+[submodule "dotfiles"]
+	path = mislav
+	url = git@github.com:mislav/dotfiles.git
