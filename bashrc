@@ -13,3 +13,5 @@ export PATH="$GOPATH/bin:$PATH"
 function cd () {
   builtin cd "$@" > /dev/null
 }
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
