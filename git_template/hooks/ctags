@@ -1,0 +1,11 @@
+#!/bin/sh
+# via http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html
+
+set -e
+trap 'rm -f "$dir/$$.tags"' EXIT
+
+dir="`git rev-parse --git-dir`"
+
+git ls-files | \
+  ctags --tag-relative -L - -f"$dir/$$.tags" --languages=-javascript,sql
+mv "$dir/$$.tags" "$dir/tags"

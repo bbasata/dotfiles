@@ -19,9 +19,6 @@
 [submodule "dotfiles"]
 	path = mislav
 	url = git@github.com:mislav/dotfiles.git
-[submodule "janus/vim-fzf"]
-	path = janus/vim-fzf
-	url = git@github.com:junegunn/fzf.vim.git
 [submodule "janus/vim-terraform"]
 	path = janus/vim-terraform
 	url = git@github.com:hashivim/vim-terraform.git
