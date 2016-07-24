@@ -22,3 +22,6 @@
 [submodule "janus/vim-terraform"]
 	path = janus/vim-terraform
 	url = git@github.com:hashivim/vim-terraform.git
+[submodule "janus/vim-bundler"]
+	path = janus/vim-bundler
+	url = git://github.com/tpope/vim-bundler.git
