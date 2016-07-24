@@ -10,6 +10,7 @@ map <Leader><Leader> :wa\|cnext<CR>
 
 let g:vim_json_syntax_conceal = 0
 let g:vroom_cucumber_options='-r features'
+let g:vroom_use_dispatch=1
 
 map <Leader><space> :nohlsearch<CR>
 map <Leader>Ga :Git add -p %<CR>
