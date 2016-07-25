@@ -25,6 +25,8 @@ map <Leader>v :r !pbpaste<CR>
 map <Leader>d :Dispatch<CR>
 map <Leader>w :wa\|Dispatch<CR>
 
+map <F19> <Esc>
+
 set relativenumber
 let g:tagbar_show_linenumbers = 2
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
