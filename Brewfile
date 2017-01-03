@@ -18,7 +18,7 @@ brew "imagemagick"
 brew "jq"
 brew "kubectl"
 brew "macvim", args: ["--with-override-system-vim"]
-brew "mas-cli"
+brew "mas"
 brew "mtr"
 # brew "phantomjs198"
 brew "ponysay"
