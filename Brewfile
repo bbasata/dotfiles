@@ -29,6 +29,7 @@ brew "tmux"
 brew "unrar"
 brew "watch"
 brew "wget"
+brew "yarn"
 
 cask "atom"
 # cask "cord"
