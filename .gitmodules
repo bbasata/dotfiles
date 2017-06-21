@@ -25,3 +25,6 @@
 [submodule "janus/vim-bundler"]
 	path = janus/vim-bundler
 	url = git://github.com/tpope/vim-bundler.git
+[submodule "hammerspoon/Spoons/ControlEscape.spoon"]
+	path = hammerspoon/Spoons/ControlEscape.spoon
+	url = git@github.com:bbasata/ControlEscape.spoon
