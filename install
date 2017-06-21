@@ -38,7 +38,7 @@ while read file; do
   fi
 done < .external
 
-brew bundle --global
+brew bundle --global --verbose
 
 if ! [ -e ~/.vim ]; then
   ./janus-bootstrap

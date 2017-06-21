@@ -9,6 +9,7 @@ endif
 map <Leader><Leader> :wa\|cnext<CR>
 
 let g:vim_json_syntax_conceal = 0
+let g:vroom_clear_screen=0
 let g:vroom_cucumber_options='-r features'
 let g:vroom_use_dispatch=1
 
@@ -22,11 +23,17 @@ map <Leader>Gco :Git checkout -p %<CR>
 map <Leader>c :w !pbcopy<CR>
 map <Leader>v :r !pbpaste<CR>
 
-map <Leader>d :Dispatch<CR>
-map <Leader>w :wa\|Dispatch<CR>
+map <Leader>d :wa\|Dispatch<CR>
+map <Leader>w :set wrap<CR>
+map <Leader>W :set nowrap<CR>
 
 map <F19> <Esc>
 
 set relativenumber
 let g:tagbar_show_linenumbers = 2
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
+augroup quickfix
+  autocmd!
+  autocmd FileType qf setlocal wrap
+augroup END
