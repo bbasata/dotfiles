@@ -37,3 +37,7 @@ augroup quickfix
   autocmd!
   autocmd FileType qf setlocal wrap
 augroup END
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
