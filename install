@@ -11,7 +11,6 @@ for file in "$PWD"/*; do
 
   [[ "config" == $name ]] && continue
   [[ "install" == $name ]] && continue
-  [[ "janus-bootstrap" == $name ]] && continue
   [ -e "${HOME}/${dotname}" ] && continue
   git --git-dir "${file}/.git" rev-parse --git-dir &>/dev/null && continue
 
@@ -39,10 +38,6 @@ while read file; do
 done < .external
 
 brew bundle --global --verbose
-
-if ! [ -e ~/.vim ]; then
-  ./janus-bootstrap
-fi
 
 if which rbenv; then
   RUBY_CONFIGURE_OPTS=--disable-install-docs rbenv install 2.4.1
