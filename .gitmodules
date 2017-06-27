@@ -16,3 +16,6 @@
 [submodule "vim/pack/default/start/ListToggle"]
 	path = vim/pack/default/start/ListToggle
 	url = https://github.com/Valloric/ListToggle
+[submodule "vim/pack/default/start/vim-dispatch"]
+	path = vim/pack/default/start/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch

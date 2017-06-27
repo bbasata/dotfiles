@@ -6,6 +6,7 @@ endif
 
 map <Leader>a :Ack!<CR>
 map <Leader>A :Ack<CR>
+map <Leader>d :Dispatch<CR>
 map <Leader>gs :Gstatus<CR>
 
 set number
