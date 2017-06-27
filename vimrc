@@ -10,6 +10,7 @@ map <Leader>d :Dispatch<CR>
 map <Leader>gs :Gstatus<CR>
 map <Leader>gp :Git add -p<CR>
 
+set incsearch
 set laststatus=2
 set mouse=a
 set number
@@ -19,3 +20,4 @@ syntax on
 
 packadd molokai
 colorscheme molokai
+highlight QuickFixLine term=reverse ctermbg=220 ctermfg=0
