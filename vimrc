@@ -4,3 +4,4 @@ map <Leader>gs :Gstatus<CR>
 
 set number
 set relativenumber
+syntax on
