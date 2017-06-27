@@ -13,3 +13,6 @@
 [submodule "vim/pack/default/start/ack.vim"]
 	path = vim/pack/default/start/ack.vim
 	url = https://github.com/mileszs/ack.vim
+[submodule "vim/pack/default/start/ListToggle"]
+	path = vim/pack/default/start/ListToggle
+	url = https://github.com/Valloric/ListToggle
