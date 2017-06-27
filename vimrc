@@ -9,6 +9,7 @@ map <Leader>A :Ack<CR>
 map <Leader>d :Dispatch<CR>
 map <Leader>gs :Gstatus<CR>
 
+set mouse=a
 set number
 set relativenumber
 syntax on
