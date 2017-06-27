@@ -7,3 +7,6 @@
 [submodule "vim/pack/default/start/vim-fugitive"]
 	path = vim/pack/default/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/pack/default/start/ctrlp.vim"]
+	path = vim/pack/default/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
