@@ -7,8 +7,10 @@ endif
 map <Leader>a :Ack!<CR>
 map <Leader>A :Ack<CR>
 map <Leader>d :Dispatch<CR>
+map <Leader>gb :Gblame<CR>
 map <Leader>gs :Gstatus<CR>
 map <Leader>gp :Git add -p<CR>
+map <Leader><Leader> :cnext<CR>
 
 set incsearch
 set laststatus=2
