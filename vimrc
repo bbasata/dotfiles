@@ -16,3 +16,6 @@ set number
 set relativenumber
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 syntax on
+
+packadd molokai
+colorscheme molokai
