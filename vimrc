@@ -15,14 +15,10 @@ map <Leader>h :helpclose<CR>
 map <Leader>H :helpclose<CR>
 map <Leader><Leader> :cnext<CR>
 
-nnoremap <Plug>TabNext :tabnext<CR>:call repeat#set("\<Plug>TabNext")<CR>
-nmap <Leader>tn <Plug>TabNext
+nnoremap <Plug>TabNext :call repeat#set("\<Plug>TabNext")<CR>:tabnext<CR>
+nmap <Leader>t <Plug>TabNext
 
-nnoremap <Plug>TabPrevious :tabprevious<CR>:call repeat#set("\<Plug>TabPrevious")<CR>
-nmap <Leader>tp <Plug>TabPrevious
-
-map <Leader>tN :tabnew<CR>
-map <Leader>TN :tabnew<CR>
+map <Leader>T :tabnew<CR>
 
 set incsearch
 set laststatus=2
