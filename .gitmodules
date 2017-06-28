@@ -22,3 +22,9 @@
 [submodule "vim/pack/default/opt/molokai"]
 	path = vim/pack/default/opt/molokai
 	url = https://github.com/tomasr/molokai
+[submodule "vim/pack/default/start/vim-eunuch"]
+	path = vim/pack/default/start/vim-eunuch
+	url = https://github.com/tpope/vim-eunuch
+[submodule "vim/pack/default/start/vim-repeat"]
+	path = vim/pack/default/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat

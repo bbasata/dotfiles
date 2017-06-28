@@ -13,6 +13,15 @@ map <Leader>gs :Gstatus<CR>
 map <Leader>gp :Git add -p<CR>
 map <Leader><Leader> :cnext<CR>
 
+nnoremap <Plug>TabNext :tabnext<CR>:call repeat#set("\<Plug>TabNext")<CR>
+nmap <Leader>tn <Plug>TabNext
+
+nnoremap <Plug>TabPrevious :tabprevious<CR>:call repeat#set("\<Plug>TabPrevious")<CR>
+nmap <Leader>tp <Plug>TabPrevious
+
+map <Leader>tN :tabnew<CR>
+map <Leader>TN :tabnew<CR>
+
 set incsearch
 set laststatus=2
 set mouse=a
