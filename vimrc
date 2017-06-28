@@ -11,6 +11,8 @@ map <Leader>gb :Gblame<CR>
 map <Leader>gc :Gcommit<CR>
 map <Leader>gs :Gstatus<CR>
 map <Leader>gp :Git add -p<CR>
+map <Leader>h :helpclose<CR>
+map <Leader>H :helpclose<CR>
 map <Leader><Leader> :cnext<CR>
 
 nnoremap <Plug>TabNext :tabnext<CR>:call repeat#set("\<Plug>TabNext")<CR>
