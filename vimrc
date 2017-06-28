@@ -1,4 +1,5 @@
 let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'

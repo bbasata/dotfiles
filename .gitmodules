@@ -28,3 +28,6 @@
 [submodule "vim/pack/default/start/vim-repeat"]
 	path = vim/pack/default/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat
+[submodule "vim/pack/default/start/ctrlp-py-matcher"]
+	path = vim/pack/default/start/ctrlp-py-matcher
+	url = https://github.com/FelikZ/ctrlp-py-matcher
