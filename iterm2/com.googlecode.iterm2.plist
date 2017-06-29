@@ -15,7 +15,7 @@
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
 	<key>AutoHideTmuxClientSession</key>
-	<false/>
+	<true/>
 	<key>CheckTestRelease</key>
 	<true/>
 	<key>ClosingHotkeySwitchesSpaces</key>
@@ -1481,7 +1481,7 @@
 	<key>OpenBookmark</key>
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
-	<integer>0</integer>
+	<integer>2</integer>
 	<key>PassOnControlClick</key>
 	<false/>
 	<key>PasteFromClipboard</key>
