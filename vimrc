@@ -1,5 +1,6 @@
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+let g:taboo_tab_format=" %P %m "
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'

@@ -31,3 +31,6 @@
 [submodule "vim/pack/default/start/ctrlp-py-matcher"]
 	path = vim/pack/default/start/ctrlp-py-matcher
 	url = https://github.com/FelikZ/ctrlp-py-matcher
+[submodule "vim/pack/default/start/taboo.vim"]
+	path = vim/pack/default/start/taboo.vim
+	url = https://github.com/gcmt/taboo.vim
