@@ -34,3 +34,6 @@
 [submodule "vim/pack/default/start/taboo.vim"]
 	path = vim/pack/default/start/taboo.vim
 	url = https://github.com/gcmt/taboo.vim
+[submodule "vim/pack/default/start/vim-puppet"]
+	path = vim/pack/default/start/vim-puppet
+	url = https://github.com/rodjek/vim-puppet

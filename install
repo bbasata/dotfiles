@@ -37,10 +37,10 @@ while read file; do
   fi
 done < .external
 
-brew bundle --global --verbose
+brew bundle --global
 
 if which rbenv; then
-  RUBY_CONFIGURE_OPTS=--disable-install-docs rbenv install 2.4.1
+  RUBY_CONFIGURE_OPTS=--disable-install-docs rbenv install --skip-existing 2.4.1
   rbenv global 2.4.1
 fi
 
