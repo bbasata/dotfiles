@@ -37,3 +37,9 @@
 [submodule "vim/pack/default/start/vim-puppet"]
 	path = vim/pack/default/start/vim-puppet
 	url = https://github.com/rodjek/vim-puppet
+[submodule "vim/pack/default/start/vim-rails"]
+	path = vim/pack/default/start/vim-rails
+	url = https://github.com/tpope/vim-rails
+[submodule "vim/pack/default/start/vim-vroom"]
+	path = vim/pack/default/start/vim-vroom
+	url = https://github.com/skalnik/vim-vroom
