@@ -1,0 +1,16 @@
+#!/usr/bin/osascript
+
+set results to ""
+
+tell application "Viscosity"
+  repeat with aConnection in connections
+    set result to name of aConnection & "|" & state of aConnection
+    if results is "" then
+      set results to result
+    else
+      set results to results & "\n" & result
+    end if
+  end
+end tell
+
+results
