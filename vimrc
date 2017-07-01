@@ -16,6 +16,7 @@ endif
 
 map <Leader>a :Ack!<CR>
 map <Leader>A :Ack<CR>
+map <Leader>b :Dispatch bundle install<CR>
 map <Leader>d :Dispatch<CR>
 map <Leader>gb :Gblame<CR>
 map <Leader>gc :Gcommit<CR>
