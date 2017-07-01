@@ -43,3 +43,6 @@
 [submodule "vim/pack/default/start/vim-vroom"]
 	path = vim/pack/default/start/vim-vroom
 	url = https://github.com/skalnik/vim-vroom
+[submodule "vim/pack/default/start/Brewfile.vim"]
+	path = vim/pack/default/start/Brewfile.vim
+	url = https://github.com/bfontaine/Brewfile.vim
