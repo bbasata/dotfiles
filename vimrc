@@ -20,6 +20,8 @@ map <Leader>b :Dispatch bundle install<CR>
 map <Leader>d :Wall<CR>:Dispatch<CR>
 map <Leader>gb :Gblame<CR>
 map <Leader>gc :Gcommit<CR>
+map <Leader>gdc :Git diff --cached<CR>
+map <Leader>gdi :Git diff<CR>
 map <Leader>gs :Gstatus<CR>
 map <Leader>gp :Git add -p<CR>
 map <Leader>h :helpclose<CR>
