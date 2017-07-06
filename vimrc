@@ -46,3 +46,5 @@ syntax on
 packadd molokai
 colorscheme molokai
 highlight QuickFixLine term=reverse ctermbg=220 ctermfg=0
+
+autocmd BufEnter * EnableStripWhitespaceOnSave
