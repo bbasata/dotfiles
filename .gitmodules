@@ -52,3 +52,9 @@
 [submodule "vim/pack/default/start/syntastic"]
 	path = vim/pack/default/start/syntastic
 	url = https://github.com/vim-syntastic/syntastic
+[submodule "vim/pack/default/start/vim-gitgutter"]
+	path = vim/pack/default/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim/pack/default/start/supertab"]
+	path = vim/pack/default/start/supertab
+	url = https://github.com/ervandew/supertab

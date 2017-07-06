@@ -44,6 +44,7 @@ set mouse=a
 set number
 set relativenumber
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set updatetime=250 " via https://github.com/airblade/vim-gitgutter#getting-started
 syntax on
 
 packadd molokai
@@ -51,3 +52,13 @@ colorscheme molokai
 highlight QuickFixLine term=reverse ctermbg=220 ctermfg=0
 
 autocmd BufEnter * EnableStripWhitespaceOnSave
+
+" syntastic recommended settings via https://github.com/vim-syntastic/syntastic#3-recommended-settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
