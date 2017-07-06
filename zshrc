@@ -48,7 +48,7 @@ HYPHEN_INSENSITIVE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aws bundler docker git kubectl osx rake rbenv tmux)
+plugins=(aws bundler docker git kubectl osx rake tmux)
 
 # User configuration
 
@@ -81,5 +81,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export RBENV_ROOT=/usr/local/opt/rbenv
+eval "$(/usr/local/bin/rbenv init --no-rehash - zsh)"
+
+eval "$(/usr/local/bin/hub alias -s)"
+
+PATH="/usr/local/sbin:$PATH"
+PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+PATH="$HOME/bin:$PATH"
+export PATH
 
 source ~/.aliases
