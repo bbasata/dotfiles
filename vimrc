@@ -37,6 +37,7 @@ nmap <Leader>t <Plug>TabNext
 
 map <Leader>T :tabnew<CR>
 
+set expandtab
 set incsearch
 set laststatus=2
 set mouse=a
