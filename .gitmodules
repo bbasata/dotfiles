@@ -49,3 +49,6 @@
 [submodule "vim/pack/default/start/vim-better-whitespace"]
 	path = vim/pack/default/start/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace
+[submodule "vim/pack/default/start/syntastic"]
+	path = vim/pack/default/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic
