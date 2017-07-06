@@ -2,6 +2,9 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 let g:taboo_tab_format=" %P %m "
 
+" syntastic
+let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+
 " vim-vroom
 let g:vroom_clear_screen=0
 let g:vroom_map_keys=0 " Let's keep <Leader>l for ListToggle
