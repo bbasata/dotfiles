@@ -50,6 +50,8 @@ set relativenumber
 set smartcase
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set updatetime=250 " via https://github.com/airblade/vim-gitgutter#getting-started
+
+filetype plugin indent on
 syntax on
 
 packadd molokai
