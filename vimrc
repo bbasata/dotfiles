@@ -41,11 +41,13 @@ nmap <Leader>t <Plug>TabNext
 map <Leader>T :tabnew<CR>
 
 set expandtab
+set ignorecase
 set incsearch
 set laststatus=2
 set mouse=a
 set number
 set relativenumber
+set smartcase
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set updatetime=250 " via https://github.com/airblade/vim-gitgutter#getting-started
 syntax on
