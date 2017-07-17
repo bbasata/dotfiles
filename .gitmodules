@@ -58,3 +58,6 @@
 [submodule "vim/pack/default/start/supertab"]
 	path = vim/pack/default/start/supertab
 	url = https://github.com/ervandew/supertab
+[submodule "vim/pack/default/start/ruby-matchit"]
+	path = vim/pack/default/start/ruby-matchit
+	url = https://github.com/vim-scripts/ruby-matchit
