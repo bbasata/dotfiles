@@ -87,6 +87,8 @@ eval "$(/usr/local/bin/rbenv init --no-rehash - zsh)"
 
 eval "$(/usr/local/bin/hub alias -s)"
 
+export EDITOR="mvim -v"
+
 PATH="/usr/local/sbin:$PATH"
 PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 PATH="$HOME/bin:$PATH"
