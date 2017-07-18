@@ -64,3 +64,6 @@
 [submodule "vim/pack/default/start/vim-endwise"]
 	path = vim/pack/default/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise
+[submodule "vim/pack/default/start/vim-commentary"]
+	path = vim/pack/default/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary
