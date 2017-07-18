@@ -30,8 +30,15 @@ map <Leader>gp :Git add -p<CR>
 map <Leader>h :helpclose<CR>
 map <Leader>H :helpclose<CR>
 
+imap ii <ESC>
+imap ij <ESC>
+imap ji <ESC>
+imap <Leader>r <ESC><Leader>r
+imap <Leader>R <ESC><Leader>R
+
+nmap <Leader>c<space> <Plug>CommentaryLine
 " via https://stackoverflow.com/a/8585343
-nmap \Q :bp\|sp\|bn\|bd<CR>
+nmap <Leader>Q :bp\|sp\|bn\|bd<CR>
 
 map <Leader><Leader> :cnext<CR>
 
@@ -53,6 +60,9 @@ set updatetime=250 " via https://github.com/airblade/vim-gitgutter#getting-start
 
 filetype plugin indent on
 syntax on
+
+" Optional package distributed with macvim
+packadd matchit
 
 packadd molokai
 colorscheme molokai
