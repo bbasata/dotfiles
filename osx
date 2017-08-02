@@ -16,3 +16,6 @@ defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 defaults write com.apple.Safari UniversalSearchEnabled -bool false
 defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 
+# Please do not ring when the phone rings :)
+defaults write com.apple.TelephonyUtilities relayCallingDisabled -int 1
+
