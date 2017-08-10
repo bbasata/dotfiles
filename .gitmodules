@@ -73,3 +73,6 @@
 [submodule "vim/pack/default/start/vim-textobj-rubyblock"]
 	path = vim/pack/default/start/vim-textobj-rubyblock
 	url = https://github.com/nelstrom/vim-textobj-rubyblock
+[submodule "vim/pack/default/start/vim-vinegar"]
+	path = vim/pack/default/start/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar
