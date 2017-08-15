@@ -1,9 +1,11 @@
+let g:ackprg='rg --vimgrep'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 let g:taboo_tab_format=" %P %m "
 
 " syntastic
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+let g:syntastic_ruby_rubocop_exec = "~/bin/rubocop-syntastic-wrapper"
 
 " vim-vroom
 let g:vroom_clear_screen=0
