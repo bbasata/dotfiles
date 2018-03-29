@@ -1,5 +1,3 @@
-tap "homebrew/versions"
-
 brew "ack"
 brew "ag"
 brew "awscli"
@@ -35,18 +33,13 @@ cask "atom"
 cask "dropbox"
 cask "firefox"
 cask "google-chrome" unless File.exist?("/Applications/Google Chrome.app")
-cask "gpgtools"
+cask "gpg-suite"
 cask "google-cloud-sdk"
 cask "hammerspoon"
-cask "heroku-toolbelt"
 cask "iterm2"
 cask "lastpass"
 cask "macvim"
 cask "minikube"
-cask "phantomjs"
 cask "postgres"
-cask "screenhero" unless File.exist?("/Applications/Screenhero.app")
 cask "slack" unless File.exist?("/Applications/Slack.app")
-cask "vagrant"
-cask "virtualbox"
 cask "vlc"
