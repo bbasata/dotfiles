@@ -76,3 +76,9 @@
 [submodule "vim/pack/default/start/vim-vinegar"]
 	path = vim/pack/default/start/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar
+[submodule "vim/pack/default/start/tagbar"]
+	path = vim/pack/default/start/tagbar
+	url = https://github.com/majutsushi/tagbar
+[submodule "vim/pack/default/start/vim-bundler"]
+	path = vim/pack/default/start/vim-bundler
+	url = https://github.com/tpope/vim-bundler
