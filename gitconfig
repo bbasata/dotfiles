@@ -9,6 +9,7 @@ helper = osxkeychain
 user = bbasata
 
 [alias]
+annotate = blame
 co = checkout
 cor = !git for-each-ref --sort=-committerdate --format='%(refname:short) (%(committerdate:relative))' refs/heads | fzf --reverse --nth=1 --preview 'git log --patch --color {1}...{1}~5' | awk '{print $1}' | xargs git checkout
 ci = commit
@@ -33,7 +34,7 @@ r = "!f() { : git log ; git l -30 "$@" ; }; f"
 ra = !git r --all
 l = "!. ~/.githelpers && pretty_git_log"
 la = !git l --all
-
+praise = blame
 pushu = push -u origin head
 up = sync
 

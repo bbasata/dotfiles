@@ -94,4 +94,6 @@ PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 PATH="$HOME/bin:$PATH"
 export PATH
 
+export CDPATH="$HOME/go/src/github.com/bbasata:$HOME/go/src/github.com/github:$HOME/github"
+
 source ~/.aliases
