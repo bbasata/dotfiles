@@ -32,9 +32,6 @@ map <Leader>gp :Git add -p<CR>
 map <Leader>h :helpclose<CR>
 map <Leader>H :helpclose<CR>
 
-imap ii <ESC>
-imap ij <ESC>
-imap ji <ESC>
 imap <Leader>r <ESC><Leader>r
 imap <Leader>R <ESC><Leader>R
 
