@@ -40,8 +40,8 @@ done < .external
 brew bundle --global
 
 if which rbenv; then
-  RUBY_CONFIGURE_OPTS=--disable-install-docs rbenv install --skip-existing 2.4.1
-  rbenv global 2.4.1
+  RUBY_CONFIGURE_OPTS=--disable-install-docs rbenv install --skip-existing 3.0.0
+  rbenv global 3.0.0
 fi
 
 ~/.osx
