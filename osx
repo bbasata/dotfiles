@@ -19,3 +19,9 @@ defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 # Please do not ring when the phone rings :)
 defaults write com.apple.TelephonyUtilities relayCallingDisabled -int 1
 
+
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock orientation right
+defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock contents-immutable -bool true
+killall Dock
