@@ -1,0 +1,78 @@
+[submodule "dotfiles"]
+	path = mislav
+	url = git@github.com:mislav/dotfiles.git
+[submodule "hammerspoon/Spoons/ControlEscape.spoon"]
+	path = hammerspoon/Spoons/ControlEscape.spoon
+	url = git@github.com:bbasata/ControlEscape.spoon
+[submodule "vim/pack/default/start/vim-fugitive"]
+	path = vim/pack/default/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/pack/default/start/ctrlp.vim"]
+	path = vim/pack/default/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "vim/pack/default/start/ack.vim"]
+	path = vim/pack/default/start/ack.vim
+	url = https://github.com/mileszs/ack.vim
+[submodule "vim/pack/default/start/ListToggle"]
+	path = vim/pack/default/start/ListToggle
+	url = https://github.com/Valloric/ListToggle
+[submodule "vim/pack/default/start/vim-dispatch"]
+	path = vim/pack/default/start/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
+[submodule "vim/pack/default/opt/molokai"]
+	path = vim/pack/default/opt/molokai
+	url = https://github.com/tomasr/molokai
+[submodule "vim/pack/default/start/vim-eunuch"]
+	path = vim/pack/default/start/vim-eunuch
+	url = https://github.com/tpope/vim-eunuch
+[submodule "vim/pack/default/start/vim-repeat"]
+	path = vim/pack/default/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "vim/pack/default/start/ctrlp-py-matcher"]
+	path = vim/pack/default/start/ctrlp-py-matcher
+	url = https://github.com/FelikZ/ctrlp-py-matcher
+[submodule "vim/pack/default/start/taboo.vim"]
+	path = vim/pack/default/start/taboo.vim
+	url = https://github.com/gcmt/taboo.vim
+[submodule "vim/pack/default/start/vim-puppet"]
+	path = vim/pack/default/start/vim-puppet
+	url = https://github.com/rodjek/vim-puppet
+[submodule "vim/pack/default/start/vim-rails"]
+	path = vim/pack/default/start/vim-rails
+	url = https://github.com/tpope/vim-rails
+[submodule "vim/pack/default/start/vim-vroom"]
+	path = vim/pack/default/start/vim-vroom
+	url = https://github.com/skalnik/vim-vroom
+[submodule "vim/pack/default/start/Brewfile.vim"]
+	path = vim/pack/default/start/Brewfile.vim
+	url = https://github.com/bfontaine/Brewfile.vim
+[submodule "vim/pack/default/start/vim-better-whitespace"]
+	path = vim/pack/default/start/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace
+[submodule "vim/pack/default/start/syntastic"]
+	path = vim/pack/default/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic
+[submodule "vim/pack/default/start/vim-gitgutter"]
+	path = vim/pack/default/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim/pack/default/start/supertab"]
+	path = vim/pack/default/start/supertab
+	url = https://github.com/ervandew/supertab
+[submodule "vim/pack/default/start/ruby-matchit"]
+	path = vim/pack/default/start/ruby-matchit
+	url = https://github.com/vim-scripts/ruby-matchit
+[submodule "vim/pack/default/start/vim-endwise"]
+	path = vim/pack/default/start/vim-endwise
+	url = https://github.com/tpope/vim-endwise
+[submodule "vim/pack/default/start/vim-commentary"]
+	path = vim/pack/default/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "vim/pack/default/start/vim-textobj-user"]
+	path = vim/pack/default/start/vim-textobj-user
+	url = https://github.com/kana/vim-textobj-user
+[submodule "vim/pack/default/start/vim-textobj-rubyblock"]
+	path = vim/pack/default/start/vim-textobj-rubyblock
+	url = https://github.com/nelstrom/vim-textobj-rubyblock
+[submodule "vim/pack/default/start/vim-vinegar"]
+	path = vim/pack/default/start/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar
