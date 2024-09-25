@@ -73,3 +73,6 @@
 [submodule "hammerspoon/Spoons/ControlEscape.spoon"]
 	path = hammerspoon/Spoons/ControlEscape.spoon
 	url = https://github.com/bbasata/ControlEscape.spoon
+[submodule "vim/pack/default/start/vim-go"]
+	path = vim/pack/default/start/vim-go
+	url = https://github.com/fatih/vim-go
