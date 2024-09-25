@@ -11,3 +11,4 @@ brew "tmux"
 brew "yq"
 
 cask "macvim"
+cask "raycast"
