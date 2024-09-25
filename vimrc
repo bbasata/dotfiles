@@ -54,7 +54,7 @@ set mouse=a
 set number
 set relativenumber
 set smartcase
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set statusline=[%n]\ %f:%l\ %h%m%r\ %=%{go#statusline#Show()}
 set updatetime=250 " via https://github.com/airblade/vim-gitgutter#getting-started
 
 filetype plugin indent on
@@ -69,12 +69,24 @@ highlight QuickFixLine term=reverse ctermbg=220 ctermfg=0
 
 autocmd BufEnter * EnableStripWhitespaceOnSave
 
-" syntastic recommended settings via https://github.com/vim-syntastic/syntastic#3-recommended-settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+let g:go_auto_same_ids = 1
+let g:go_auto_type_info = 1
+let g:go_echo_command_info = 0
+let g:go_highlight_array_whitespace_error = 1
+let g:go_highlight_chan_whitespace_error = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_function_parameters = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_space_tab_error = 1
+let g:go_highlight_trailing_whitespace_error = 1
+let g:go_metalinter_autosave_enabled = 1
+let g:go_term_close_on_exit = 0
+let g:go_term_mode = "split"
+let g:go_test_show_name = 1
+
+set foldmethod=syntax
