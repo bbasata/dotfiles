@@ -23,11 +23,11 @@ map <Leader>a :Ack!<CR>
 map <Leader>A :Ack<CR>
 map <Leader>b :Dispatch bundle install<CR>
 map <Leader>d :Wall<CR>:Dispatch<CR>
-map <Leader>gb :Gblame<CR>
-map <Leader>gc :Gcommit<CR>
+map <Leader>gb :Git blame<CR>
+map <Leader>gc :Git commit<CR>
 map <Leader>gdc :Git diff --cached<CR>
 map <Leader>gdi :Git diff<CR>
-map <Leader>gs :Gstatus<CR>
+map <Leader>gs :Git<CR>
 map <Leader>gp :Git add -p<CR>
 map <Leader>h :helpclose<CR>
 map <Leader>H :helpclose<CR>
