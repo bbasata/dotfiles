@@ -63,8 +63,8 @@ syntax on
 " Optional package distributed with macvim
 packadd matchit
 
-packadd molokai
-colorscheme molokai
+packadd distinguished
+colorscheme distinguished
 highlight QuickFixLine term=reverse ctermbg=220 ctermfg=0
 
 autocmd BufEnter * EnableStripWhitespaceOnSave
@@ -89,4 +89,15 @@ let g:go_term_close_on_exit = 0
 let g:go_term_mode = "split"
 let g:go_test_show_name = 1
 
+" let g:go_debug = ['shell-commands', 'lsp']
+
 set foldmethod=syntax
+set fillchars=fold:\ ,
+
+if executable('terraform-ls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'terraform-ls',
+        \ 'cmd': {server_info->['terraform-ls', 'serve']},
+        \ 'whitelist': ['terraform'],
+        \ })
+endif
