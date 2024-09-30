@@ -91,3 +91,6 @@
 [submodule "vim/pack/default/opt/distinguished"]
 	path = vim/pack/default/opt/distinguished
 	url = https://github.com/Lokaltog/vim-distinguished.git
+[submodule "vim/pack/default/start/copilot.vim"]
+	path = vim/pack/default/start/copilot.vim
+	url = https://github.com/github/copilot.vim.git
