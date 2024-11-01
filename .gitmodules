@@ -88,3 +88,6 @@
 [submodule "vim/pack/default/start/vim-lsp"]
 	path = vim/pack/default/start/vim-lsp
 	url = https://github.com/prabirshrestha/vim-lsp
+[submodule "vim/vim/pack/default/start/vim-yaml-folds"]
+	path = vim/vim/pack/default/start/vim-yaml-folds
+	url = https://github.com/pedrohdz/vim-yaml-folds.git
