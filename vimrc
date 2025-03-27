@@ -3,6 +3,7 @@ set showcmd
 let g:ackprg='rg --vimgrep'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+let g:ctrlp_show_hidden = 1
 let g:taboo_tab_format=" %P %m "
 
 " syntastic
@@ -48,6 +49,7 @@ nmap <Leader>t <Plug>TabNext
 
 map <Leader>T :tabnew<CR>
 
+set autoread
 set expandtab
 set ignorecase
 set incsearch
@@ -78,4 +80,4 @@ let g:syntastic_check_on_wq = 0
 
 set foldmethod=syntax
 set fillchars=fold:\ ,
-
+set shortmess+=A
