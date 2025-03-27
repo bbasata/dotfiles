@@ -1,1 +1,1 @@
-export LESS="-eFMX"
+export LESS="-eFMRX"
