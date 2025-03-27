@@ -75,7 +75,7 @@
 	url = https://github.com/bbasata/ControlEscape.spoon
 [submodule "vim/pack/default/start/vim-go"]
 	path = vim/pack/default/start/vim-go
-	url = https://github.com/fatih/vim-go
+	url = https://github.com/bbasata/vim-go
 [submodule "vim/pack/default/opt/distinguished"]
 	path = vim/pack/default/opt/distinguished
 	url = https://github.com/Lokaltog/vim-distinguished.git
