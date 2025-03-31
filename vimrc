@@ -1,10 +1,16 @@
 set showcmd
 
 let g:ackprg='rg --vimgrep'
-let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
-let g:ctrlp_show_hidden = 1
 let g:taboo_tab_format=" %P %m "
+
+" ctrlp
+" via https://www.jeffcomput.es/posts/2018/03/speed-up-ctrlp-with-fd/
+if executable('fd')
+    let g:ctrlp_user_command = 'fd -c never "" %s'
+    let g:ctrlp_use_caching = 0
+endif
+
+let g:ctrlp_show_hidden = 1
 
 " syntastic
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
