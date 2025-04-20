@@ -56,7 +56,6 @@ nmap <Leader>t <Plug>TabNext
 map <Leader>T :tabnew<CR>
 
 set autoread
-set expandtab
 set ignorecase
 set incsearch
 set laststatus=2
@@ -64,7 +63,7 @@ set mouse=a
 set number
 set relativenumber
 set smartcase
-set statusline=[%n]\ %f:%l\ %h%m%r\ %=%{go#statusline#Show()}
+set statusline=[%n]\ [%3p%%]\ %f:%l,%v\ %h%m%r\ %=%{go#statusline#Show()}
 set updatetime=250 " via https://github.com/airblade/vim-gitgutter#getting-started
 
 filetype plugin indent on
