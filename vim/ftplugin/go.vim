@@ -25,3 +25,6 @@ let g:go_test_show_name = 1
 
 let b:syntastic_mode_map = { 'mode': 'passive' }
 
+set tabstop=4
+
+TagbarOpen
