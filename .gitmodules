@@ -82,12 +82,15 @@
 [submodule "vim/pack/default/start/copilot.vim"]
 	path = vim/pack/default/start/copilot.vim
 	url = https://github.com/github/copilot.vim.git
-[submodule "vim/pack/default/start/async.vim"]
-	path = vim/pack/default/start/async.vim
-	url = https://github.com/prabirshrestha/async.vim
 [submodule "vim/pack/default/start/vim-lsp"]
 	path = vim/pack/default/start/vim-lsp
 	url = https://github.com/prabirshrestha/vim-lsp
-[submodule "vim/vim/pack/default/start/vim-yaml-folds"]
-	path = vim/vim/pack/default/start/vim-yaml-folds
-	url = https://github.com/pedrohdz/vim-yaml-folds.git
+[submodule "vim/pack/default/start/asyncomplete.vim"]
+	path = vim/pack/default/start/asyncomplete.vim
+	url = https://github.com/prabirshrestha/asyncomplete.vim.git
+[submodule "vim/pack/default/start/asyncomplete-lsp.vim"]
+	path = vim/pack/default/start/asyncomplete-lsp.vim
+	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim.git
+[submodule "vim/pack/default/start/tagbar"]
+	path = vim/pack/default/start/tagbar
+	url = https://github.com/preservim/tagbar.git
