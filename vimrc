@@ -1,3 +1,4 @@
+set macmeta
 set showcmd
 
 let g:ackprg='rg --vimgrep'
@@ -71,6 +72,7 @@ filetype plugin indent on
 syntax on
 
 " Optional package distributed with macvim
+packadd comment
 packadd matchit
 
 packadd distinguished
