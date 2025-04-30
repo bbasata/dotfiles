@@ -1,3 +1,4 @@
+set hidden
 set macmeta
 set showcmd
 
