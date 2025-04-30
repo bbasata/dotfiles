@@ -13,10 +13,6 @@ endif
 
 let g:ctrlp_show_hidden = 1
 
-" syntastic
-let g:syntastic_ruby_checkers = ['rubocop', 'mri']
-let g:syntastic_ruby_rubocop_exec = "~/bin/rubocop-syntastic-wrapper"
-
 " vim-vroom
 let g:vroom_clear_screen=0
 let g:vroom_map_keys=0 " Let's keep <Leader>l for ListToggle
@@ -77,13 +73,6 @@ packadd matchit
 packadd distinguished
 colorscheme distinguished
 highlight QuickFixLine term=reverse ctermbg=220 ctermfg=0
-
-autocmd BufEnter * EnableStripWhitespaceOnSave
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 set foldmethod=syntax
 set fillchars=fold:\ ,

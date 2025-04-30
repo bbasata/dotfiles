@@ -37,12 +37,6 @@
 [submodule "vim/pack/default/start/Brewfile.vim"]
 	path = vim/pack/default/start/Brewfile.vim
 	url = https://github.com/bfontaine/Brewfile.vim
-[submodule "vim/pack/default/start/vim-better-whitespace"]
-	path = vim/pack/default/start/vim-better-whitespace
-	url = https://github.com/ntpeters/vim-better-whitespace
-[submodule "vim/pack/default/start/syntastic"]
-	path = vim/pack/default/start/syntastic
-	url = https://github.com/vim-syntastic/syntastic
 [submodule "vim/pack/default/start/vim-gitgutter"]
 	path = vim/pack/default/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
@@ -94,3 +88,9 @@
 [submodule "vim/pack/default/start/tagbar"]
 	path = vim/pack/default/start/tagbar
 	url = https://github.com/preservim/tagbar.git
+[submodule "vim/pack/default/start/ale"]
+	path = vim/pack/default/start/ale
+	url = https://github.com/dense-analysis/ale/
+[submodule "vim/pack/default/start/vim-lsp-ale"]
+	path = vim/pack/default/start/vim-lsp-ale
+	url = https://github.com/rhysd/vim-lsp-ale
