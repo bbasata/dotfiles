@@ -5,15 +5,6 @@ set showcmd
 let g:ackprg='rg --vimgrep'
 let g:taboo_tab_format=" %P %m "
 
-" ctrlp
-" via https://www.jeffcomput.es/posts/2018/03/speed-up-ctrlp-with-fd/
-if executable('fd')
-    let g:ctrlp_user_command = 'fd -c never "" %s'
-    let g:ctrlp_use_caching = 0
-endif
-
-let g:ctrlp_show_hidden = 1
-
 " vim-vroom
 let g:vroom_clear_screen=0
 let g:vroom_map_keys=0 " Let's keep <Leader>l for ListToggle
