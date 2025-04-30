@@ -17,6 +17,12 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
+" fzf.vim
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+
+nnoremap <C-p> :FZF<CR>
+nnoremap <C-t> :terminal<CR>
+
 map <Leader>a :Ack!<CR>
 map <Leader>A :Ack<CR>
 map <Leader>b :Dispatch bundle install<CR>
@@ -69,3 +75,5 @@ highlight QuickFixLine term=reverse ctermbg=220 ctermfg=0
 set foldmethod=syntax
 set fillchars=fold:\ ,
 set shortmess+=A
+
+set rtp+=/opt/homebrew/opt/fzf
