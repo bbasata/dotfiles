@@ -53,12 +53,12 @@ map <Leader>T :tabnew<CR>
 set autoread
 set ignorecase
 set incsearch
-set laststatus=2
 set mouse=a
 set number
 set relativenumber
 set smartcase
-set statusline=[%n]\ [%3p%%]\ %f:%l,%v\ %h%m%r\ %=%{go#statusline#Show()}
+set laststatus=2
+set statusline=[%n]\ [%3p%%]\ %f:%l,%v\ %h%m%r\ %=%{go#statusline#Show()}\ %=%{substitute(getcwd(),$HOME,'~','')} 
 set updatetime=250 " via https://github.com/airblade/vim-gitgutter#getting-started
 
 filetype plugin indent on
@@ -75,5 +75,3 @@ highlight QuickFixLine term=reverse ctermbg=220 ctermfg=0
 set foldmethod=syntax
 set fillchars=fold:\ ,
 set shortmess+=A
-
-set rtp+=/opt/homebrew/opt/fzf
