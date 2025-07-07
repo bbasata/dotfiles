@@ -22,5 +22,3 @@ let g:go_test_show_name = 1
 " let g:go_debug = ['shell-commands', 'lsp']
 
 set tabstop=4
-
-TagbarOpen

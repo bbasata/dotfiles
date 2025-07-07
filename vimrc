@@ -1,16 +1,26 @@
+set autoread
+set clipboard=autoselect,unnamed
+set fillchars=fold:\ ,
+set foldmethod=syntax
 set hidden
+set ignorecase
+set incsearch
+set laststatus=2
 set macmeta
+set mouse=a
+set number
+set relativenumber
+set shortmess+=A
 set showcmd
+set smartcase
+set statusline=[%n]\ [%3p%%]\ %f:%l,%v\ %h%m%r\ %=%{go#statusline#Show()}\ %=%{substitute(getcwd(),$HOME,'~','')} 
+set updatetime=250 " via https://github.com/airblade/vim-gitgutter#getting-started
+set wildmenu
+set wildmode=list:longest,full
+set wildoptions=pum
 
 let g:ackprg='rg --vimgrep'
 let g:taboo_tab_format=" %P %m "
-
-" vim-vroom
-let g:vroom_clear_screen=0
-let g:vroom_map_keys=0 " Let's keep <Leader>l for ListToggle
-let g:vroom_use_dispatch=1
-silent! map <unique> <Leader>r :VroomRunTestFile<CR>
-silent! map <unique> <Leader>R :VroomRunNearestTest<CR>
 
 " ack.vim
 if executable('ag')
@@ -50,17 +60,6 @@ nmap <Leader>t <Plug>TabNext
 
 map <Leader>T :tabnew<CR>
 
-set autoread
-set ignorecase
-set incsearch
-set mouse=a
-set number
-set relativenumber
-set smartcase
-set laststatus=2
-set statusline=[%n]\ [%3p%%]\ %f:%l,%v\ %h%m%r\ %=%{go#statusline#Show()}\ %=%{substitute(getcwd(),$HOME,'~','')} 
-set updatetime=250 " via https://github.com/airblade/vim-gitgutter#getting-started
-
 filetype plugin indent on
 syntax on
 
@@ -71,7 +70,3 @@ packadd matchit
 packadd distinguished
 colorscheme distinguished
 highlight QuickFixLine term=reverse ctermbg=220 ctermfg=0
-
-set foldmethod=syntax
-set fillchars=fold:\ ,
-set shortmess+=A
