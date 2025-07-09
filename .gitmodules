@@ -91,3 +91,21 @@
 [submodule "vim/pack/default/start/fzf"]
 	path = vim/pack/default/start/fzf
 	url = git@github.com:junegunn/fzf.git
+[submodule "vim/pack/default/start/vim-pandoc"]
+	path = vim/pack/default/start/vim-pandoc
+	url = git@github.com:vim-pandoc/vim-pandoc.git
+[submodule "vim/pack/default/start/vim-pandoc-syntax"]
+	path = vim/pack/default/start/vim-pandoc-syntax
+	url = git@github.com:vim-pandoc/vim-pandoc-syntax.git
+[submodule "local/share/nvim/site/pack/default/start/vim-go"]
+	path = local/share/nvim/site/pack/default/start/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "local/share/nvim/site/pack/default/start/tagbar"]
+	path = local/share/nvim/site/pack/default/start/tagbar
+	url = https://github.com/preservim/tagbar.git
+[submodule "local/share/nvim/site/pack/default/start/ListToggle"]
+	path = local/share/nvim/site/pack/default/start/ListToggle
+	url = https://github.com/Valloric/ListToggle.git
+[submodule "local/share/nvim/site/pack/default/start/vim-vinegar"]
+	path = local/share/nvim/site/pack/default/start/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar.git
