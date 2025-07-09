@@ -1,0 +1,5 @@
+--hidden
+
+--glob=!.git/*
+--glob=!tags
+--glob=!vendor/*
