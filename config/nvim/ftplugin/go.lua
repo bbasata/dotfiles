@@ -1,14 +1,3 @@
-vim.lsp.config('gopls', {
-  -- Server-specific settings. See `:help lsp-quickstart`
-  settings = {
-    ['gopls'] = {
-	    usePlaceholders = true
-    },
-  },
-})
-
-vim.lsp.enable('gopls')
-
 vim.opt_local.wrap = false
 vim.opt_local.tabstop = 4
 
