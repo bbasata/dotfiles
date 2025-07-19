@@ -33,6 +33,8 @@ vim.opt.relativenumber = true
 vim.opt.rtp:append('/opt/homebrew/opt/fzf')
 vim.opt.shortmess:append('I') -- see :intro
 
+vim.diagnostic.config({ signs = false, underline = true, update_in_insert = true, virtual_lines = true, virtual_text = false })
+
 vim.lsp.config('gopls', {
   -- Server-specific settings. See `:help lsp-quickstart`
   settings = {
@@ -70,10 +72,10 @@ vim.lsp.config('lua_ls', {
       workspace = {
         checkThirdParty = false,
         library = {
-          vim.env.VIMRUNTIME
+          vim.env.VIMRUNTIME,
           -- Depending on the usage, you might want to add additional paths
           -- here.
-          -- '${3rd}/luv/library'
+          '${3rd}/luv/library'
           -- '${3rd}/busted/library'
         }
         -- Or pull in all of 'runtimepath'.
