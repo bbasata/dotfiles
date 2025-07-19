@@ -1,0 +1,11 @@
+# Snippets for terraform-plugin-framework
+
+priority -10
+
+snippet diag "resp.Diagnostics.AddError"
+resp.Diagnostics.AddError(
+	"${1}",
+	"${2}.\n\n"
+)
+${0}
+endsnippet
