@@ -28,3 +28,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.rtp:append('/opt/homebrew/opt/fzf')
 vim.opt.shortmess:append('I') -- see :intro
+
+require('blink.cmp').setup({
+	completion = { documentation = { auto_show = true } },
+})
