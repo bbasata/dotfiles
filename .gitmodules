@@ -142,3 +142,12 @@
 [submodule "local/share/nvim/site/pack/default/start/blink.cmp"]
 	path = local/share/nvim/site/pack/default/start/blink.cmp
 	url = https://github.com/Saghen/blink.cmp.git
+[submodule "local/share/nvim/site/pack/default/start/cmp-go-pkgs"]
+	path = local/share/nvim/site/pack/default/start/cmp-go-pkgs
+	url = https://github.com/Yu-Leo/cmp-go-pkgs.git
+[submodule "local/share/nvim/site/pack/default/start/blink.compat"]
+	path = local/share/nvim/site/pack/default/start/blink.compat
+	url = https://github.com/Saghen/blink.compat.git
+[submodule "local/share/nvim/site/pack/default/start/nvim-treesitter"]
+	path = local/share/nvim/site/pack/default/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
