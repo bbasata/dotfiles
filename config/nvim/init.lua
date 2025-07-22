@@ -10,7 +10,14 @@ require('user.lsp')
 
 -- vim.lsp.set_log_level 'debug'
 -- print('😮 lsp log level: debug')
-vim.lsp.enable({'gopls', 'lua_ls', 'terraform-ls'})
+vim.lsp.enable({
+	'ember',
+	'gopls',
+	'lua_ls',
+	'pyright',
+	'ruby-lsp',
+	'terraform-ls'
+})
 
 require('user.treesitter')
 require('user.completion')
