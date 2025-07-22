@@ -2,7 +2,7 @@ vim.lsp.config('gopls', {
   -- Server-specific settings. See `:help lsp-quickstart`
   settings = {
     ['gopls'] = {
-	    usePlaceholders = true
+      usePlaceholders = true
     },
   },
 })

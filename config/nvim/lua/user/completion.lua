@@ -29,7 +29,7 @@ require('blink.cmp').setup({
 				max_items = 11,
 
 				-- all blink.cmp source config options work as normal:
-				score_offset = 25,
+				score_offset = 4,
 
 				-- this table is passed directly to the proxied completion source
 				-- as the `option` field in nvim-cmp's source config
