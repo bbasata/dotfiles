@@ -11,12 +11,14 @@ require('user.lsp')
 -- vim.lsp.set_log_level 'debug'
 -- print('😮 lsp log level: debug')
 vim.lsp.enable({
+	'clangd',
 	'ember',
 	'gopls',
+	'jedi_language_server',
 	'lua_ls',
-	'pyright',
 	'ruby-lsp',
-	'terraformls'
+	'terraformls',
+	'zls',
 })
 
 require('user.treesitter')
