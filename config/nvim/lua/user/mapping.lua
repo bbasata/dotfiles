@@ -10,4 +10,6 @@ vim.cmd('nnoremap <silent> <leader>d :wall\\|:Dispatch<cr>')
 
 vim.cmd('nnoremap <silent> <leader>t :TagbarToggle<cr>')
 
+vim.cmd('nnoremap <silent> <leader>T :tabnew<cr>')
+
 vim.cmd('nnoremap <silent> <Leader><Leader> :cnext<cr>')
