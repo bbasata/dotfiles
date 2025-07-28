@@ -1,7 +1,7 @@
-require('nvim-treesitter').install({ 'c', 'cpp', 'go', 'gomod', 'gosum' ,'gotmpl', 'gowork', 'hcl', 'idris', 'lua', 'luadoc', 'python', 'ruby', 'terraform', 'yaml', 'zig' })
+require('nvim-treesitter').install({ 'c', 'cpp', 'go', 'gomod', 'gosum' ,'gotmpl', 'gowork', 'hcl', 'idris', 'lua', 'luadoc', 'python', 'ruby', 'swift', 'terraform', 'yaml', 'zig' })
 
 vim.api.nvim_create_autocmd('FileType', {
-	pattern = { 'c', 'cpp', 'go', 'hcl', 'python', 'ruby', 'terraform', 'zig' },
+	pattern = { 'c', 'cpp', 'go', 'hcl', 'python', 'ruby', 'swift', 'terraform', 'zig' },
 	callback = function()
 		-- syntax highlighting, provided by Neovim
 		vim.treesitter.start()
