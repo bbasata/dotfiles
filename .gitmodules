@@ -52,12 +52,6 @@
 [submodule "vim/pack/default/start/vim-vinegar"]
 	path = vim/pack/default/start/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar
-[submodule "mislav"]
-	path = mislav
-	url = https://github.com/mislav/dotfiles
-[submodule "hammerspoon/Spoons/ControlEscape.spoon"]
-	path = hammerspoon/Spoons/ControlEscape.spoon
-	url = https://github.com/bbasata/ControlEscape.spoon
 [submodule "vim/pack/default/start/vim-go"]
 	path = vim/pack/default/start/vim-go
 	url = https://github.com/bbasata/vim-go
