@@ -1,4 +1,5 @@
 vim.opt.foldmethod = 'syntax'
+vim.opt.ignorecase = true
 vim.opt.laststatus = 2
 vim.opt.number = true
 vim.opt.relativenumber = true
