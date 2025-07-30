@@ -6,6 +6,7 @@ vim.cmd [[packadd nohlsearch]]
 
 require('user.options')
 require('user.mapping')
+require('user.commands')
 require('user.lsp')
 
 -- vim.lsp.set_log_level 'debug'
@@ -25,8 +26,6 @@ require('user.treesitter')
 require('user.completion')
 
 vim.diagnostic.config({ signs = false, underline = true, update_in_insert = true, virtual_lines = true, virtual_text = false })
-
-vim.cmd [[command! -bang -nargs=? -complete=dir Files call fzf#vim#files(<q-args>, {'options': ['--cycle', '--no-info', '--color', 'pointer:yellow', '--bind', '\:jump,jump:accept']}, <bang>0)]]
 
 vim.cmd [[autocmd FileType netrw setl bufhidden=delete]]
 vim.cmd [[autocmd FileType netrw setl number]]
