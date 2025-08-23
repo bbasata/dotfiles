@@ -1,5 +1,8 @@
 vim.cmd('nnoremap <silent> <c-p> :Files<cr>')
 
+vim.cmd('nnoremap <silent> <leader>+ :silent! :resize +10<cr>')
+vim.cmd('nnoremap <silent> <leader>- :silent! :resize -10<cr>')
+
 vim.cmd('nnoremap <silent> <leader>a :silent! grep! <c-r><c-w><cr>:copen<cr>')
 
 vim.cmd('nnoremap <silent> <leader>c :silent! :Commentary<cr>')
@@ -22,6 +25,10 @@ vim.keymap.set('n', '<leader>gc', function()
 end, { desc = "Git commit" })
 vim.cmd('nnoremap <silent> <leader>gp :Git add -p<cr>')
 vim.cmd('nnoremap <silent> <leader>gs :Git<cr>')
+
+
+vim.cmd('inoremap <silent> <leader>p // 🍿')
+vim.cmd('nnoremap <silent> <leader>p I<enter>// 🍿 <esc>:write<cr>')
 
 vim.cmd('nnoremap <silent> <leader>t :TagbarToggle<cr>')
 
