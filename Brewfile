@@ -2,6 +2,7 @@ tap "hashicorp/tap"
 
 brew "ack"
 brew "ag"
+brew "asdf"
 brew "bat"
 brew "cmake"
 brew "curl"

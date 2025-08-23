@@ -8,6 +8,11 @@ vim.cmd('xnoremap <silent> <leader>c <esc>:\'<,\'>Commentary<cr>')
 vim.cmd('inoremap <silent> <leader>d <esc>:wall\\|:Dispatch<cr>')
 vim.cmd('nnoremap <silent> <leader>d :wall\\|:Dispatch<cr>')
 
+vim.cmd('nnoremap <silent> <leader>ee :edit $MYVIMRC<cr>')
+vim.cmd('nnoremap <silent> <leader>eg :edit $HOME/dotfiles/config/nvim/ftplugin/go.lua<cr>')
+vim.cmd('nnoremap <silent> <leader>em :edit $HOME/dotfiles/config/nvim/lua/user/mapping.lua<cr>')
+vim.cmd('nnoremap <silent> <leader>eo :edit $HOME/dotfiles/config/nvim/lua/user/options.lua<cr>')
+
 vim.cmd('nnoremap <silent> <leader>gb :Git blame<cr>')
 vim.keymap.set('n', '<leader>gc', function()
 	vim.cmd [[Git]]

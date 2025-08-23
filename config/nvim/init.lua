@@ -4,6 +4,8 @@ vim.cmd [[colorscheme papercolor-prime]] -- also: default, lunaperche, torte, vi
 vim.cmd [[filetype plugin indent on]]
 vim.cmd [[packadd nohlsearch]]
 
+vim.g.maplocalleader = ';'
+
 require('user.options')
 require('user.mapping')
 require('user.commands')
