@@ -145,3 +145,6 @@
 [submodule "local/share/nvim/site/pack/default/start/nvim-treesitter"]
 	path = local/share/nvim/site/pack/default/start/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule "local/share/nvim/site/pack/default/start/Brewfile.vim"]
+	path = local/share/nvim/site/pack/default/start/Brewfile.vim
+	url = git@github.com:bfontaine/Brewfile.vim.git

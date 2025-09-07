@@ -1,3 +1,6 @@
+vim.lsp.config('clangd', {
+})
+
 vim.lsp.config('gopls', {
   -- Server-specific settings. See `:help lsp-quickstart`
   settings = {
