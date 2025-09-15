@@ -35,3 +35,7 @@ vim.cmd('nnoremap <silent> <leader>t :TagbarToggle<cr>')
 vim.cmd('nnoremap <silent> <leader>T :tabnew<cr>')
 
 vim.cmd('nnoremap <silent> <leader><leader> :cnext<cr>')
+
+vim.cmd('nnoremap <silent> <M-q> :confirm qall<cr>')
+vim.cmd('nnoremap <silent> <M-w> :bwipe<cr>')
+
