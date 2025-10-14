@@ -5,10 +5,11 @@ vim.lsp.config('gopls', {
   -- Server-specific settings. See `:help lsp-quickstart`
   settings = {
     ['gopls'] = {
-	    analyses = {
-		    modernize = false
-	    },
-      usePlaceholders = true
+			analyses = {
+					modernize = false
+			},
+			importsSource = 'gopls',
+			usePlaceholders = true
     },
   },
 })

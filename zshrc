@@ -105,4 +105,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+eval "$(brew shellenv)"
+autoload -Uz compinit
+compinit
+
 source <(fzf --zsh)

@@ -7,6 +7,9 @@ vim.g.go_list_type_commands = { GoCallers = "quickfix", GoImplements = "quickfix
 
 vim.cmd [[nnoremap <buffer> <Leader>1 :GoAlternate!<cr>]]
 
-vim.keymap.set('n', '<localleader>c', ':GoCallers<cr>')
-vim.keymap.set('n', '<localleader>i', ':GoImplements<cr>')
-vim.keymap.set('n', '<localleader>r', ':GoReferrers<cr>')
+vim.keymap.set('n', '<localleader>c', ':GoCallers<cr>', { buffer = true })
+vim.keymap.set('n', '<localleader>f', ':GoFmt<cr>', { buffer = true })
+vim.keymap.set('n', '<localleader>i', ':GoImplements<cr>', { buffer = true })
+vim.keymap.set('n', '<localleader>r', ':GoReferrers<cr>', { buffer = true })
+vim.keymap.set('n', '<localleader>9', [[:call feedkeys('ysa"(')<cr>]], { buffer = true })
+vim.keymap.set('n', '<localleader>0', [[:call feedkeys('ds(')<cr>]], { buffer = true })

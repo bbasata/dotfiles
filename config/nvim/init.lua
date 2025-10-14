@@ -5,6 +5,7 @@ vim.cmd [[filetype plugin indent on]]
 vim.cmd [[packadd nohlsearch]]
 
 vim.g.maplocalleader = ';'
+vim.g.go_fmt_autosave = 0
 
 require('user.options')
 require('user.mapping')
@@ -14,12 +15,12 @@ require('user.lsp')
 -- vim.lsp.set_log_level 'debug'
 -- print('😮 lsp log level: debug')
 vim.lsp.enable({
-	'clangd',
-	'ember',
+	-- 'clangd',
+	-- 'ember',
 	'gopls',
-	'jedi_language_server',
+	-- 'jedi_language_server',
 	'lua_ls',
-	'ruby-lsp',
+	-- 'ruby-lsp',
 	'terraformls',
 	'zls',
 })
@@ -33,3 +34,6 @@ vim.cmd [[autocmd FileType netrw setl bufhidden=delete]]
 vim.cmd [[autocmd FileType netrw setl number]]
 vim.cmd [[autocmd FileType netrw setl relativenumber]]
 
+vim.cmd [[autocmd BufWritePre *.go lua vim.lsp.buf.format({ async = false })]]
+vim.cmd [[autocmd BufWritePre go.mod lua vim.lsp.buf.format({ async = false })]]
+vim.cmd [[autocmd BufWritePre go.sum lua vim.lsp.buf.format({ async = false })]]
