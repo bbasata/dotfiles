@@ -22,6 +22,7 @@ require('blink.cmp').setup({
 			snippets = {
 					score_offset = 2
 			},
+			-- go_pkgs completes package names when the cursor is in an `import` section
 			go_pkgs = {
 				name = 'go_pkgs',
 				module = 'blink.compat.source',

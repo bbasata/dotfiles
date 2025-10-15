@@ -36,6 +36,12 @@ vim.cmd('nnoremap <silent> <leader>T :tabnew<cr>')
 
 vim.cmd('nnoremap <silent> <leader><leader> :cnext<cr>')
 
+vim.keymap.set({'i', 'n'}, '<M-e>', vim.diagnostic.open_float, { desc = '[E]xpand diagnostic message' })
+
+vim.keymap.set({'i', 'n'}, '<M-v>', function()
+		vim.diagnostic.config({ virtual_lines = not vim.diagnostic.config().virtual_lines })
+end, { desc = "Toggle diagnostics [v]irtual lines" })
+
 vim.cmd('nnoremap <silent> <M-q> :confirm qall<cr>')
 vim.cmd('nnoremap <silent> <M-w> :bwipe<cr>')
 
