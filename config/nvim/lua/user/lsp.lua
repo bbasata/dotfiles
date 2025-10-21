@@ -8,7 +8,17 @@ vim.lsp.config('gopls', {
 			analyses = {
 				modernize = false
 			},
+			hints = {
+				assignVariableTypes = true,
+				compositeLiteralFields = true,
+				compositeLiteralTypes = true,
+				constantValues = true,
+				functionTypeParameters = true,
+				parameterNames = true,
+				rangeVariableTypes = true,
+			},
 			importsSource = 'gopls',
+			semanticTokens = true,
 			usePlaceholders = true
 		},
 	},

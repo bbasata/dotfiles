@@ -28,19 +28,23 @@ vim.lsp.enable({
 require('user.treesitter')
 require('user.completion')
 
-vim.diagnostic.config({ signs = false, underline = true, update_in_insert = true, virtual_text = false, virtual_lines = {
-		format = function(diagnostic)
-				return string.format("%s: %s", diagnostic.source, diagnostic.message)
-		end
-} })
+-- vim.diagnostic.config({ signs = true, underline = true, update_in_insert = false, virtual_text = false, virtual_lines = {
+-- 		format = function(diagnostic)
+-- 				return string.format("%s: %s", diagnostic.source, diagnostic.message)
+-- 		end
+-- } })
+
+vim.diagnostic.config {
+	signs = true,
+	underline = true,
+	update_in_insert = false,
+	virtual_text = false,
+	virtual_lines = false
+}
 
 vim.diagnostic.handlers.loclist = {
-		show = function(_, _, _, opts)
-				-- Generally don't want it to open on every update
-				opts.loclist.open = opts.loclist.open or false
-				local winid = vim.api.nvim_get_current_win()
-				vim.diagnostic.setloclist(opts.loclist)
-				vim.api.nvim_set_current_win(winid)
+		show = function()
+			vim.diagnostic.setloclist { open = false }
 		end
 }
 
@@ -60,3 +64,7 @@ vim.cmd [[autocmd BufWritePre Brewfile lua vim.lsp.buf.format({ async = false })
 vim.cmd [[autocmd BufWritePre Gemfile lua vim.lsp.buf.format({ async = false })]]
 vim.cmd [[autocmd BufWritePre *.rb lua vim.lsp.buf.format({ async = false })]]
 vim.cmd [[autocmd BufWritePre *.ru lua vim.lsp.buf.format({ async = false })]]
+
+require('user.statusline')
+
+-- vim: ts=2 sw=2

@@ -72,7 +72,7 @@ ZSH_CUSTOM="$HOME/dotfiles/zsh/custom"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws gcloud gh git last-working-dir podman rbenv)
+plugins=(aws gcloud gh git last-working-dir podman)
 
 source $ZSH/oh-my-zsh.sh
 
