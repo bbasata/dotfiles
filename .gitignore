@@ -3,4 +3,4 @@ local/share/nvim/blink/cmp
 local/share/nvim/site/parser
 local/share/nvim/site/parser-info
 local/share/nvim/site/queries
-zsh/custom/hashicorp-*.zsh
+zsh/custom/???-hashicorp-*.zsh
