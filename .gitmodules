@@ -138,7 +138,7 @@
 	url = https://github.com/Saghen/blink.cmp.git
 [submodule "local/share/nvim/site/pack/default/start/cmp-go-pkgs"]
 	path = local/share/nvim/site/pack/default/start/cmp-go-pkgs
-	url = https://github.com/Yu-Leo/cmp-go-pkgs.git
+	url = https://github.com/bbasata/cmp-go-pkgs.git
 [submodule "local/share/nvim/site/pack/default/start/blink.compat"]
 	path = local/share/nvim/site/pack/default/start/blink.compat
 	url = https://github.com/Saghen/blink.compat.git
