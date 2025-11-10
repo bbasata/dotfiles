@@ -31,7 +31,7 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
 
-zstyle ':omz:update' verbosity minimal
+zstyle ':omz:update' verbose silent
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -72,6 +72,7 @@ ZSH_CUSTOM="$HOME/dotfiles/zsh/custom"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+SHOW_AWS_PROMPT=false
 plugins=(aws gcloud gh git last-working-dir podman)
 
 source $ZSH/oh-my-zsh.sh
