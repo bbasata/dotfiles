@@ -1,8 +1,11 @@
+local custom_theme = require("lualine.themes.auto")
+custom_theme.normal.c.bg = "None"
+
 require('lualine').setup {
 	options = {
 		component_separators = { left = ' ', right = ' ' },
 		section_separators = { left = ' ', right = ' ' },
-		theme = "tomorrow_night",
+		theme = custom_theme,
 	},
 	sections = {
 		lualine_a = {
