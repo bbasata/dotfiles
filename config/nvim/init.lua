@@ -38,20 +38,18 @@ vim.cmd [[autocmd FileType netrw setl bufhidden=delete]]
 vim.cmd [[autocmd FileType netrw setl number]]
 vim.cmd [[autocmd FileType netrw setl relativenumber]]
 
-vim.cmd [[autocmd BufWritePre *.go lua vim.lsp.buf.format { async = false }]]
-vim.cmd [[autocmd BufWritePre go.mod lua vim.lsp.buf.format { async = false }]]
-vim.cmd [[autocmd BufWritePre go.sum lua vim.lsp.buf.format { async = false }]]
-
-vim.cmd [[autocmd BufWritePre *.lua lua vim.lsp.buf.format { async = false }]]
-
-vim.cmd [[autocmd BufWritePre *.hcl lua vim.lsp.buf.format { async = false }]]
-vim.cmd [[autocmd BufWritePre *.tf lua vim.lsp.buf.format { async = false }]]
-vim.cmd [[autocmd BufWritePre *.tfvars lua vim.lsp.buf.format { async = false }]]
-
-vim.cmd [[autocmd BufWritePre Brewfile lua vim.lsp.buf.format { async = false }]]
-vim.cmd [[autocmd BufWritePre Gemfile lua vim.lsp.buf.format { async = false }]]
-vim.cmd [[autocmd BufWritePre *.rb lua vim.lsp.buf.format { async = false }]]
-vim.cmd [[autocmd BufWritePre *.ru lua vim.lsp.buf.format { async = false }]]
+-- via https://www.mitchellhanberg.com/modern-format-on-save-in-neovim/
+vim.api.nvim_create_autocmd("LspAttach", {
+	group = vim.api.nvim_create_augroup("lsp", { clear = true }),
+	callback = function(args)
+		vim.api.nvim_create_autocmd("BufWritePre", {
+			buffer = args.buf,
+			callback = function()
+				vim.lsp.buf.format { async = false, id = args.data.client_id }
+			end,
+		})
+	end
+})
 
 require('user.statusline')
 
