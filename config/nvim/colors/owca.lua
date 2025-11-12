@@ -18,6 +18,10 @@ hl(0, 'Function', { ctermfg = 10 })
 hl(0, 'String', { ctermfg = 10 })
 hl(0, 'Type', { ctermfg = 5 })
 
+-- netrw
+hl(0, 'Directory', { ctermfg = 10 })
+
+-- go
 hl(0, '@lsp.mod.definition.go', { ctermfg = 15 })
 hl(0, '@lsp.type.namespace.go', { ctermfg = 7 })
 hl(0, '@lsp.typemod.string.format.go', { ctermfg = 9 })
