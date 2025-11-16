@@ -11,6 +11,7 @@ require('user.commands')
 require('user.lsp')
 
 vim.lsp.enable({
+	'clangd',
 	'gopls',
 	'lua_ls',
 	'terraformls',
