@@ -1,19 +1,37 @@
+assert(vim.lsp.config['clangd'])
 vim.lsp.config('clangd', {
 })
 
+assert(vim.lsp.config['gopls'])
 vim.lsp.config('gopls', {
-	-- Server-specific settings. See `:help lsp-quickstart`
+	-- {settings}? (`lsp.LSPObject`) Map of language server-specific settings,
+	-- decided by the client. Sent to the LS if requested via
+	-- `workspace/configuration`. Keys are case-sensitive.
+	-- https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#workspace_configuration
+
 	settings = {
-		['gopls'] = {
-			analyses = {
-				modernize = false
+		-- https://go.dev/gopls/settings
+		gopls = {
+			-- https://github.com/golang/tools/blob/HEAD/gopls/doc/analyzers.md
+			-- analyses = {
+			-- modernize = false
+			-- },
+
+			-- vim.lsp.codelens.refresh() and vim.lsp.codelens.run()
+			codelenses = {
+				test = true
 			},
+
+			-- https://github.com/golang/tools/blob/HEAD/gopls/doc/inlayHints.md
+			-- vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 			hints = {
 				assignVariableTypes = true,
 				compositeLiteralFields = true,
 				compositeLiteralTypes = true,
 				constantValues = true,
 				functionTypeParameters = true,
+				-- does this work?
+				ignoredError = true,
 				parameterNames = true,
 				rangeVariableTypes = true,
 			},

@@ -13,6 +13,7 @@ vim.cmd('nnoremap <silent> <leader>d :wall\\|:Dispatch<cr>')
 
 vim.cmd('nnoremap <silent> <leader>ee :edit $MYVIMRC<cr>')
 vim.cmd('nnoremap <silent> <leader>eg :edit $HOME/dotfiles/config/nvim/ftplugin/go.lua<cr>')
+vim.cmd('nnoremap <silent> <leader>el :edit $HOME/dotfiles/config/nvim/lua/user/lsp.lua<cr>')
 vim.cmd('nnoremap <silent> <leader>em :edit $HOME/dotfiles/config/nvim/lua/user/mapping.lua<cr>')
 vim.cmd('nnoremap <silent> <leader>eo :edit $HOME/dotfiles/config/nvim/lua/user/options.lua<cr>')
 

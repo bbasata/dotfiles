@@ -25,3 +25,8 @@ hl(0, 'Directory', { ctermfg = 10 })
 hl(0, '@lsp.mod.definition.go', { ctermfg = 15 })
 hl(0, '@lsp.type.namespace.go', { ctermfg = 7 })
 hl(0, '@lsp.typemod.string.format.go', { ctermfg = 9 })
+
+-- lsp
+hl(0, 'LspInlayHint', { ctermfg = 0 })
+hl(0, 'LspCodeLens', { ctermfg = 0 })
+hl(0, 'LspCodeLensSeparator', { ctermfg = 4 })
