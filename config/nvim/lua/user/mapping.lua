@@ -12,10 +12,13 @@ vim.cmd('inoremap <silent> <leader>d <esc>:wall\\|:Dispatch<cr>')
 vim.cmd('nnoremap <silent> <leader>d :wall\\|:Dispatch<cr>')
 
 vim.cmd('nnoremap <silent> <leader>ee :edit $MYVIMRC<cr>')
-vim.cmd('nnoremap <silent> <leader>eg :edit $HOME/dotfiles/config/nvim/ftplugin/go.lua<cr>')
+vim.cmd('nnoremap <silent> <leader>eg :edit $HOME/dotfiles/config/nvim/after/ftplugin/go.lua<cr>')
 vim.cmd('nnoremap <silent> <leader>el :edit $HOME/dotfiles/config/nvim/lua/user/lsp.lua<cr>')
 vim.cmd('nnoremap <silent> <leader>em :edit $HOME/dotfiles/config/nvim/lua/user/mapping.lua<cr>')
 vim.cmd('nnoremap <silent> <leader>eo :edit $HOME/dotfiles/config/nvim/lua/user/options.lua<cr>')
+
+vim.cmd('nnoremap <silent> grh :lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<cr>')
+vim.cmd('nnoremap <silent> grl :lua vim.lsp.codelens.run()<cr>')
 
 vim.cmd('nnoremap <silent> <leader>gb :Git blame<cr>')
 vim.keymap.set('n', '<leader>gc', function()
@@ -37,12 +40,11 @@ vim.cmd('nnoremap <silent> <leader>T :tabnew<cr>')
 
 vim.cmd('nnoremap <silent> <leader><leader> :cnext<cr>')
 
-vim.keymap.set({'i', 'n'}, '<M-e>', vim.diagnostic.open_float, { desc = '[E]xpand diagnostic message' })
+vim.keymap.set({ 'i', 'n' }, '<M-e>', vim.diagnostic.open_float, { desc = '[E]xpand diagnostic message' })
 
-vim.keymap.set({'i', 'n'}, '<M-v>', function()
-		vim.diagnostic.config({ virtual_lines = not vim.diagnostic.config().virtual_lines })
+vim.keymap.set({ 'i', 'n' }, '<M-v>', function()
+	vim.diagnostic.config({ virtual_lines = not vim.diagnostic.config().virtual_lines })
 end, { desc = "Toggle diagnostics [v]irtual lines" })
 
 vim.cmd('nnoremap <silent> <M-q> :confirm qall<cr>')
 vim.cmd('nnoremap <silent> <M-w> :bwipe<cr>')
-

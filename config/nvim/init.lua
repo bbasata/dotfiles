@@ -39,16 +39,21 @@ vim.cmd [[autocmd FileType netrw setl bufhidden=delete]]
 vim.cmd [[autocmd FileType netrw setl number]]
 vim.cmd [[autocmd FileType netrw setl relativenumber]]
 
--- via https://www.mitchellhanberg.com/modern-format-on-save-in-neovim/
 vim.api.nvim_create_autocmd("LspAttach", {
-	group = vim.api.nvim_create_augroup("lsp", { clear = true }),
+	group = vim.api.nvim_create_augroup("user.lsp", { clear = true }),
 	callback = function(args)
-		vim.api.nvim_create_autocmd("BufWritePre", {
-			buffer = args.buf,
-			callback = function()
-				vim.lsp.buf.format { async = false, id = args.data.client_id }
-			end,
-		})
+		local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
+
+		if not client:supports_method('textDocument/willSaveWaitUntil')
+				and client:supports_method('textDocument/formatting') then
+			vim.api.nvim_create_autocmd('BufWritePre', {
+				group = vim.api.nvim_create_augroup(('user.lsp.%d'):format(args.buf), { clear = true }),
+				buffer = args.buf,
+				callback = function()
+					vim.lsp.buf.format({ bufnr = args.buf, id = client.id, timeout_ms = 1000 })
+				end,
+			})
+		end
 	end
 })
 

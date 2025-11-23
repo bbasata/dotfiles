@@ -28,5 +28,5 @@ hl(0, '@lsp.typemod.string.format.go', { ctermfg = 9 })
 
 -- lsp
 hl(0, 'LspInlayHint', { ctermfg = 0 })
-hl(0, 'LspCodeLens', { ctermfg = 0 })
+hl(0, 'LspCodeLens', { ctermfg = 0, bold = true })
 hl(0, 'LspCodeLensSeparator', { ctermfg = 4 })
