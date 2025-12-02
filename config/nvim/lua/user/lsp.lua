@@ -93,6 +93,18 @@ vim.lsp.config('lua_ls', {
 	}
 })
 
+vim.lsp.config('terraformls', {
+	capabilities = {
+		textDocument = {
+			hover = {
+				contentFormat = { 'markdown' }
+			},
+			signatureHelp = {
+				contextSupport = true
+			}
+		}
+	}
+})
 
 vim.api.nvim_create_autocmd({ 'BufEnter', 'CursorHold', 'InsertLeave' }, {
 	callback = function(args)

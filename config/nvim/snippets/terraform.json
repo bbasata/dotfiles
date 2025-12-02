@@ -1,0 +1,18 @@
+
+{
+  "terraform": {
+    "prefix": "tf",
+    "description": "terraform {}",
+    "body": [
+      "terraform {",
+      "  required_version = \"~> 1.${minor}\"",
+      "  required_providers {",
+      "    ${provider} = {",
+      "      source = \"${source}\"",
+      "      version = \"~> ${version}\"",
+      "    }",
+      "  }",
+      "}"
+    ]
+  }
+}
