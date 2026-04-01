@@ -17,7 +17,6 @@ vim.lsp.config('gopls', {
 			-- modernize = false
 			-- },
 
-			-- vim.lsp.codelens.refresh() and vim.lsp.codelens.run()
 			codelenses = {
 				test = true
 			},
@@ -108,7 +107,7 @@ vim.lsp.config('terraformls', {
 
 vim.api.nvim_create_autocmd({ 'BufEnter', 'CursorHold', 'InsertLeave' }, {
 	callback = function(args)
-		vim.lsp.codelens.refresh({ bufnr = args.buf })
+		vim.lsp.codelens.enable(true, { bufnr = args.buf })
 	end
 })
 
