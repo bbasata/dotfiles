@@ -151,3 +151,9 @@
 [submodule "local/share/nvim/site/pack/default/start/lualine.nvim"]
 	path = local/share/nvim/site/pack/default/start/lualine.nvim
 	url = https://github.com/nvim-lualine/lualine.nvim.git
+[submodule "local/share/nvim/site/pack/default/start/sidekick.nvim"]
+	path = local/share/nvim/site/pack/default/start/sidekick.nvim
+	url = git@github.com:folke/sidekick.nvim.git
+[submodule "local/share/nvim/site/pack/default/opt/copilot-lsp"]
+	path = local/share/nvim/site/pack/default/start/copilot-lsp
+	url = git@github.com:copilotlsp-nvim/copilot-lsp.git
