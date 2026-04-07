@@ -7,4 +7,4 @@ PATH="/usr/local/bin:$PATH"
 trap 'rm -f "$$.tags"' EXIT
 
 git ls-files | ctags --tag-relative -L - -f"$$.tags" --options="$HOME/.config/ctags"
-mv "$$.tags" "tags"
+mv "$$.tags" ".git/tags"
