@@ -14,13 +14,13 @@ require('blink.cmp').setup({
 	},
 	signature = { enabled = true, window = { show_documentation = false } },
 	sources = {
-		default = {'lsp', 'path', 'snippets', 'buffer'},
+		default = { 'lsp', 'path', 'snippets', 'buffer' },
 		per_filetype = {
-			go = { inherit_defaults = true, 'go_pkgs'}
+			go = { inherit_defaults = true, 'go_pkgs' }
 		},
 		providers = {
 			snippets = {
-					score_offset = 2
+				score_offset = 2
 			},
 			-- go_pkgs completes package names when the cursor is in an `import` section
 			go_pkgs = {
@@ -44,8 +44,10 @@ require('blink.cmp').setup({
 })
 
 vim.api.nvim_create_autocmd({ "LspAttach" }, {
-  pattern = { "*.go" },
-  callback = function(args)
-    require("cmp_go_pkgs").init_items(args)
-  end,
+	pattern = { "*.go" },
+	callback = function(args)
+		require("cmp_go_pkgs").init_items(args)
+	end,
 })
+
+-- vim: ts=2 sw=2 sts=2
