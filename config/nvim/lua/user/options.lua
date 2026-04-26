@@ -7,4 +7,4 @@ vim.opt.rtp:append('/opt/homebrew/opt/fzf')
 vim.opt.shortmess:append('I') -- see :intro
 vim.opt.updatetime = 1000
 
-vim.cmd [[set statusline=[%3p%%]\ %f:%l,%v\ %h%m%r\ %=%{go#statusline#Show()}]]
+vim.cmd [[set statusline=[%3p%%]\ %f:%l,%v\ %h%m%r]]

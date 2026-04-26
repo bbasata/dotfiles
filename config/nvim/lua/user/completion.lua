@@ -9,6 +9,9 @@ require('blink.cmp').setup({
 		menu = { draw = { treesitter = { 'lsp' } } },
 		trigger = { show_on_accept_on_trigger_character = true, show_on_insert_on_trigger_character = true },
 	},
+	fuzzy = {
+		prebuilt_binaries = { force_version = 'v1.10.2' }
+	},
 	keymap = {
 		preset = 'super-tab'
 	},
