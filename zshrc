@@ -73,7 +73,8 @@ ZSH_CUSTOM="$HOME/dotfiles/zsh/custom"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 SHOW_AWS_PROMPT=false
-plugins=(aws gcloud gh git last-working-dir podman)
+plugins=(aws gcloud gh git git-lfs golang last-working-dir podman terraform zoxide)
+plugins+=(command-not-found history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,7 +108,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(brew shellenv)"
-autoload -Uz compinit
-compinit
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 source <(fzf --zsh)
