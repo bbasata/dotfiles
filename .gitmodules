@@ -157,3 +157,6 @@
 [submodule "local/share/nvim/site/pack/default/opt/copilot-lsp"]
 	path = local/share/nvim/site/pack/default/start/copilot-lsp
 	url = git@github.com:copilotlsp-nvim/copilot-lsp.git
+[submodule "local/share/nvim/site/pack/default/applescript.vim"]
+	path = local/share/nvim/site/pack/default/applescript.vim
+	url = git@github.com:vim-scripts/applescript.vim
