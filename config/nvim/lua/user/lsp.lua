@@ -2,6 +2,13 @@ assert(vim.lsp.config['clangd'])
 vim.lsp.config('clangd', {
 })
 
+-- assert(vim.lsp.config['copilot-lsp'])
+vim.lsp.config('copilot-lsp', {})
+
+assert(vim.lsp.config['dockerls'])
+vim.lsp.config('dockerls', {
+})
+
 assert(vim.lsp.config['gopls'])
 vim.lsp.config('gopls', {
 	-- {settings}? (`lsp.LSPObject`) Map of language server-specific settings,
@@ -98,6 +105,11 @@ vim.lsp.config('terraformls', {
 			hover = {
 				contentFormat = { 'markdown' }
 			},
+			semanticTokens = {
+				requests = {
+					full = true
+				}
+			},
 			signatureHelp = {
 				contextSupport = true
 			}
@@ -116,6 +128,8 @@ vim.cmd [[unmenu PopUp.How-to\ disable\ mouse]]
 
 vim.lsp.enable({
 	-- 'clangd',
+	'copilot-lsp',
+	'dockerls',
 	'gopls',
 	'lua_ls',
 	'terraformls',

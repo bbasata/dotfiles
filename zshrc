@@ -111,3 +111,9 @@ eval "$(brew shellenv)"
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 source <(fzf --zsh)
+
+# added by Snowflake SnowflakeCLI installer v1.0
+export PATH=/Applications/SnowflakeCLI.app/Contents/MacOS/:$PATH
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /Users/baraa.basata/bin/tfcloud tfcloud

@@ -12,6 +12,7 @@ require('user.terminal')
 require('user.treesitter')
 require('user.completion')
 require('user.diagnostic')
+require('user.sidekick')
 require('user.statusline')
 
 -- vim: ts=2 sw=2

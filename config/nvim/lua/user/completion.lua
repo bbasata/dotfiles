@@ -23,7 +23,7 @@ require('blink.cmp').setup({
 		},
 		providers = {
 			snippets = {
-				score_offset = 2
+				score_offset = 4
 			},
 			-- go_pkgs completes package names when the cursor is in an `import` section
 			go_pkgs = {
