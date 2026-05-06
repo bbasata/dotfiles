@@ -1,6 +1,6 @@
 # Modified oh-my-zsh Bureau Theme
 
-_PATH="%{$fg_bold[white]%}%~%{$reset_color%}"
+_PATH="%{$fg_bold[magenta]%}%~%{$reset_color%}"
 _1LEFT="$_PATH"
 
 bureau_precmd () {
