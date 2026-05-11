@@ -3,3 +3,4 @@ export HOMEBREW_NO_ENV_HINTS=1
 export HOMEBREW_NO_UPDATE_REPORT_NEW=1
 export HOMEBREW_USE_INTERNAL_API=1
 
+eval "$(brew shellenv)"
