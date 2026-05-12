@@ -38,6 +38,7 @@ window-save-state = never
 window-step-resize = true
 cursor-style = bar
 font-size = 36
+progress-style = false
 window-padding-x = 16
 window-padding-y = 16
 window-height = 16
