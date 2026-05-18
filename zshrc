@@ -111,10 +111,9 @@ fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 source <(fzf --zsh)
 
-# added by Snowflake SnowflakeCLI installer v1.0
-export PATH=/Applications/SnowflakeCLI.app/Contents/MacOS/:$PATH
-
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /Users/baraa.basata/bin/tfcloud tfcloud
 
 complete -o nospace -C /Users/baraa.basata/bin/terraform terraform
+source <(COMPLETE=zsh jj)
+eval "$(op completion zsh)"; compdef _op op
+complete -o nospace -C /Users/baraa.basata/go/bin/tfctl tfctl
