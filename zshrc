@@ -74,7 +74,7 @@ ZSH_CUSTOM="$HOME/dotfiles/zsh/custom"
 # Add wisely, as too many plugins slow down shell startup.
 SHOW_AWS_PROMPT=false
 plugins=(aws gcloud gh git git-lfs golang last-working-dir podman terraform zoxide)
-plugins+=(command-not-found history-substring-search)
+plugins+=(history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
