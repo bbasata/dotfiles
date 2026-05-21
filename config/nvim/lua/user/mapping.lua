@@ -41,7 +41,7 @@ vim.cmd('nnoremap <silent> <leader>gs :Git<cr>')
 
 
 vim.cmd('inoremap <silent> <leader>p // 🍿')
-vim.cmd('nnoremap <silent> <leader>p I<enter>// 🍿 <esc>:write<cr>')
+vim.cmd('nnoremap <silent> <leader>p o// 🍿<esc>:write<cr>')
 
 vim.cmd('nnoremap <silent> <leader>t :TagbarToggle<cr>')
 
@@ -57,3 +57,5 @@ end, { desc = "Toggle diagnostics [v]irtual lines" })
 
 vim.cmd('nnoremap <silent> <M-q> :confirm qall<cr>')
 vim.cmd('nnoremap <silent> <M-w> :bwipe<cr>')
+
+-- vim: ts=2 sw=2
