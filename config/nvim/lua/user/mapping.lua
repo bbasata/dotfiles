@@ -19,6 +19,7 @@ vim.cmd('nnoremap <silent> <leader>eg :edit $HOME/dotfiles/config/nvim/after/ftp
 vim.cmd('nnoremap <silent> <leader>el :edit $HOME/dotfiles/config/nvim/lua/user/lsp.lua<cr>')
 vim.cmd('nnoremap <silent> <leader>em :edit $HOME/dotfiles/config/nvim/lua/user/mapping.lua<cr>')
 vim.cmd('nnoremap <silent> <leader>eo :edit $HOME/dotfiles/config/nvim/lua/user/options.lua<cr>')
+vim.cmd('nnoremap <silent> <leader>ep :edit $HOME/dotfiles/config/nvim/lua/user/projectionist.lua<cr>')
 vim.cmd('nnoremap <silent> <leader>es :edit $HOME/dotfiles/config/nvim/lua/user/statusline.lua<cr>')
 vim.cmd('nnoremap <silent> <leader>et :edit $HOME/dotfiles/config/nvim/lua/user/treesitter.lua<cr>')
 
@@ -54,6 +55,8 @@ vim.keymap.set({ 'i', 'n' }, '<M-e>', vim.diagnostic.open_float, { desc = '[E]xp
 vim.keymap.set({ 'i', 'n' }, '<M-v>', function()
 	vim.diagnostic.config({ virtual_lines = not vim.diagnostic.config().virtual_lines })
 end, { desc = "Toggle diagnostics [v]irtual lines" })
+
+vim.cmd('nnoremap <silent> <C-a> :A<cr>')
 
 vim.cmd('nnoremap <silent> <M-q> :confirm qall<cr>')
 vim.cmd('nnoremap <silent> <M-w> :bwipe<cr>')

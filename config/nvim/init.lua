@@ -12,6 +12,7 @@ require('user.terminal')
 require('user.treesitter')
 require('user.completion')
 require('user.diagnostic')
+require('user.projectionist')
 require('user.sidekick')
 require('user.statusline')
 

@@ -160,3 +160,6 @@
 [submodule "local/share/nvim/site/pack/default/applescript.vim"]
 	path = local/share/nvim/site/pack/default/applescript.vim
 	url = git@github.com:vim-scripts/applescript.vim
+[submodule "local/share/nvim/site/pack/default/start/vim-projectionist"]
+	path = local/share/nvim/site/pack/default/start/vim-projectionist
+	url = git@github.com:tpope/vim-projectionist.git
