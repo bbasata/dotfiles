@@ -18,6 +18,11 @@ vim.g.projectionist_heuristics = {
 
 		["*.y"] = {
 			make = [[go generate ./{dirname}]],
+			alternate = "{dirname}/{basename}_y.go",
+		},
+
+		["*_y.go"] = {
+			alternate = "{dirname}/{basename}.y",
 		}
 	},
 
