@@ -3,6 +3,22 @@ autocmd WinEnter * if &buftype == 'quickfix' | set winheight=999 | endif
 ]]
 
 
+-- via Destroy All Software #13
+vim.cmd [[cnoremap %% <C-R>=expand('%:h').'/'<cr>]]
+vim.cmd [[
+function! RenameFile()
+	let from = expand('%')
+  let to = input('Rename to: ', expand('%'))
+  if to != '' && to != from
+		exec ':saveas ' . to
+		exec ':silent !rm ' . from
+		redraw!
+	endif
+endfunction
+
+map <leader>n :call RenameFile()<cr>
+]]
+
 vim.cmd('nnoremap <silent> <c-p> :Files<cr>')
 
 vim.cmd('nnoremap <silent> <leader>+ :silent! :resize +10<cr>')
