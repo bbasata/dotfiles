@@ -1,3 +1,8 @@
+vim.cmd [[
+autocmd WinEnter * if &buftype == 'quickfix' | set winheight=999 | endif
+]]
+
+
 vim.cmd('nnoremap <silent> <c-p> :Files<cr>')
 
 vim.cmd('nnoremap <silent> <leader>+ :silent! :resize +10<cr>')

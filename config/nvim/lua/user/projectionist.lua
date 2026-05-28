@@ -1,18 +1,30 @@
 vim.g.projectionist_heuristics = {
-	["*"] = {
+	["go.mod"] = {
 		["*.go"] = {
 			alternate = "{dirname}/{basename}_test.go",
-			type = "test"
-		},
-
-		["expression.go"] = {
-			alternate = "expression_test.go",
-			type = "test"
+			type = "source"
 		},
 
 		["*_test.go"] = {
 			alternate = "{dirname}/{basename}.go",
-			type = "source"
+			make =
+			[[run="$(grep '^func Test' {file}  | gsed -e 's|func \(.*\)(.*$|\1|' | tr '\n' '|')" go test -v -race -run="$run" ./{dirname}]],
+			type = "test"
+		},
+
+		["cmd/*.go"] = {
+			make = [[go install ./cmd/{dirname}]]
+		},
+
+		["*.y"] = {
+			make = [[go generate ./{dirname}]],
 		}
+	},
+
+	["*.tf"] = {
+		["*"] = {
+			make =
+			"TF_IN_AUTOMATION=1 terraform init -no-color -backend=false && terraform plan -no-color -input=false"
+		},
 	}
 }
