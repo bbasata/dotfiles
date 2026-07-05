@@ -1,3 +1,5 @@
+vim.opt.cdhome = false
+vim.opt.cindent = true
 vim.opt.foldmethod = 'syntax'
 vim.opt.ignorecase = true
 vim.opt.laststatus = 2
