@@ -2,7 +2,7 @@ vim.cmd [[colorscheme owca]]
 vim.cmd [[filetype plugin indent on]]
 vim.cmd [[packadd nohlsearch]]
 
-vim.g.maplocalleader = ';'
+vim.g.maplocalleader = ','
 
 require('user.options')
 require('user.mapping')

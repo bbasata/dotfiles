@@ -25,6 +25,12 @@ vim.cmd('nnoremap <silent> <leader>+ :silent! :resize +10<cr>')
 vim.cmd('nnoremap <silent> <leader>- :silent! :resize -10<cr>')
 
 vim.cmd('nnoremap <silent> <leader>a :silent! grep! <c-r><c-w><cr>:copen<cr>')
+vim.cmd('nnoremap <silent> <localleader>a :grep! ')
+vim.keymap.set('n', '<localleader>a', function()
+	vim.api.nvim_feedkeys(':silent! grep! ""', 'nt', false)
+	local key = vim.api.nvim_replace_termcodes("<Left>", true, false, true)
+	vim.api.nvim_feedkeys(key, 'n', false)
+end, { desc = "grep" })
 
 vim.cmd('nnoremap <silent> <leader>c :silent! :Commentary<cr>')
 vim.cmd('xnoremap <silent> <leader>c <esc>:\'<,\'>Commentary<cr>')
@@ -65,11 +71,13 @@ vim.cmd('nnoremap <silent> <leader>gs :Git<cr>')
 vim.cmd('inoremap <silent> <leader>p // 🍿')
 vim.cmd('nnoremap <silent> <leader>p o// 🍿<esc>:write<cr>')
 
-vim.cmd('nnoremap <silent> <leader>t :TagbarToggle<cr>')
+vim.cmd('nnoremap <silent> <localleader>t :TagbarToggle<cr>')
 
+vim.cmd('nnoremap <silent> <leader>t :tabnext<cr>')
 vim.cmd('nnoremap <silent> <leader>T :tabnew<cr>')
 
 vim.cmd('nnoremap <silent> <leader><leader> :cnext<cr>')
+vim.cmd('nnoremap <silent> <localleader><localleader> :lnext<cr>')
 
 vim.keymap.set({ 'i', 'n' }, '<M-e>', vim.diagnostic.open_float, { desc = '[E]xpand diagnostic message' })
 
