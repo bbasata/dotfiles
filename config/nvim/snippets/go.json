@@ -1,0 +1,20 @@
+{
+	"table-driven test": {
+		"prefix": "tab",
+		"body": [
+			"examples := map[string]struct{",
+			"    ${field} ${type}",
+			"}{",
+			"    \"${name}\": {",
+			"        ${field}: ${value},",
+			"    },",
+			"}",
+      "",
+			"for name, example := range examples {",
+			"    t.Run(name, func(tt *testing.T) {",
+			"        tt.Log(example)",
+			"    })",
+			"}"
+		]
+	}
+}
