@@ -10,6 +10,8 @@ hl(0, 'Normal', { ctermfg = 7, ctermbg = 16 })
 hl(0, 'LineNr', { ctermfg = 8 })
 hl(0, 'EndOfBuffer', { ctermfg = 16 })
 
+hl(0, 'CursorLine', { ctermbg = 0 })
+
 hl(0, 'Special', { ctermfg = 12 })
 
 hl(0, 'Constant', { ctermfg = 9 })
